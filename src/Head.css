@@ -1,0 +1,42 @@
+.container {
+  width: 1024px;
+  height: auto;
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+}
+header .header-logo {
+  float: left;
+  height: 55px;
+  line-height: 55px;
+}
+header .header-basket {
+  float: right;
+  height: 55px;
+  line-height: 55px;
+}
+nav .nav-header {
+  background-color: rgba(63, 62, 62, 0.726);
+  width: 100%;
+  height: 27px;
+  line-height: 27px;
+  margin: 0 auto;
+  display: inline-block;
+  clear: both;
+}
+nav .nav-category {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+}
+nav .header-home-item {
+  display: inline-block;
+}
