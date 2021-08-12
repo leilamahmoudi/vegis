@@ -7,7 +7,10 @@ export default function Footer() {
       <div className="container">
         <div class="about-us">
           <img href="#" alt="logo" />
-          <p>jbkjbkjbk</p>
+          <p>
+            Whether you’re looking for annual or interim reports, you can <br />
+            download our financial publications here.
+          </p>
         </div>
         <div className="servises">
           <ul>
