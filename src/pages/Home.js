@@ -1,6 +1,4 @@
 import React from "react";
-import "./Home.css";
-import Create from "./Create";
 
 export default function Home() {
   return (
@@ -13,7 +11,6 @@ export default function Home() {
         <div className="home-main">
           <img href="#" alt="vegist" />
         </div>
-        <Create />
       </div>
     </div>
   );

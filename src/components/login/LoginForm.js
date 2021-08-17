@@ -1,9 +1,9 @@
 import React from "react";
-import "./Create.css";
+import "./loginForm.css";
 
-export default function Create() {
+export default function LoginForm() {
   return (
-    <div className="Create">
+    <div className="LoginForm">
       <div className="container">
         <div className="create-account">
           <div className="create-title">
