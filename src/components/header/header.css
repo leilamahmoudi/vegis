@@ -41,15 +41,16 @@ nav .nav-category {
 }
 
 .header-home-item {
-  display: inline-block;
   height: 45px;
   line-height: 45px;
 }
 .home-item {
   text-align: center;
-  width: 100%;
+  width: 80%;
   height: 45px;
   line-height: 45px;
+  margin: 0 auto;
+  font-size: 15px;
 }
 .home-list {
   margin: 0 15px 0 25px;
@@ -58,4 +59,42 @@ nav .nav-category {
 .nav {
   display: inline-block;
   clear: both;
+}
+.header-home-item .home-item:before {
+  content: "";
+  position: absolute;
+  height: 44px;
+  width: 1px;
+  background-color: #aca5a5;
+}
+.header-home-item .home-item:after {
+  content: "";
+  position: absolute;
+  height: 44px;
+  width: 1px;
+  background-color: #aca5a5;
+}
+.header-home-item .home-item .home:after {
+  content: "";
+  position: absolute;
+  height: 44px;
+  width: 1px;
+  background-color: #aca5a5;
+  right: 646px;
+}
+.hotlines-servise {
+  float: right;
+  width: 20%;
+  height: 30px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: right;
+  margin: -55px 12px;
+}
+.headphones {
+  float: right;
+}
+.hotlines {
+  float: right;
+  list-style-type: none;
 }

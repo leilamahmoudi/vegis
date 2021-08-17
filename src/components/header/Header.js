@@ -30,22 +30,29 @@ export default function Header() {
               </div>
               <div className="header-home-item">
                 <ul className="home-item">
-                  <li className="home-list">HOME</li>
-                  <li className="home-list">SHOP</li>
-                  <li className="home-list">COLLECTION</li>
-                  <li className="home-list">PAGES</li>
-                  <li className="home-list">BLOGS</li>
-                  <li className="home-list">BUY VIGIST</li>
+                  <li className="home-list home">HOME</li>
+                  <li className="home-list shop">SHOP</li>
+                  <li className="home-list collection">COLLECTION</li>
+                  <li className="home-list pages">PAGES</li>
+                  <li className="home-list blogs">BLOGS</li>
+                  <li className="home-list buy">BUY VIGIST</li>
+                </ul>
+              </div>
+
+              <div className="hotlines-servise">
+                <img
+                  href="assets/images/icons/Headphones.png"
+                  className="headphones"
+                  alt="lines"
+                />
+                <ul className="hotlines">
+                  <li>
+                    <a href="#">HOTLINES</a>
+                  </li>
+                  <li>+01 234 567 89</li>
                 </ul>
               </div>
             </form>
-            <i class="fas fa-headset"></i>
-            <ul>
-              <li>
-                <a href="#">HOTLINES</a>
-              </li>
-              <li>+01 234 567 89</li>
-            </ul>
           </nav>
         </div>
       </div>

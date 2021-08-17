@@ -1,15 +1,15 @@
 import React from "react";
-
+import "./home.css";
 export default function Home() {
   return (
     <div className="Home">
       <div className="container">
         <div className="home-bar">
-          <p>HOME</p>
-          <p>Create Account</p>
+          <p className="home-home">HOME</p>
+          <p className="home-create">Create Account</p>
         </div>
         <div className="home-main">
-          <img href="#" alt="vegist" />
+          <div className="home-screen"></div>
         </div>
       </div>
     </div>
