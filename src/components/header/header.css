@@ -9,40 +9,47 @@
 .header {
   background-color: rgb(255, 255, 255);
   width: 100%;
-  height: 105px;
-  line-height: 105px;
+  height: 148px;
+  line-height: 148px;
 }
-header .header-logo {
+.header-bar {
+  width: 100%;
+  height: 83px;
+  line-height: 83px;
+  margin: 0 auto;
+}
+.header-logo {
   float: left;
   width: 91px;
   height: 46px;
+  top: 43px;
 }
-header .header-basket {
+.header-basket {
   float: right;
   width: 34px;
   height: 26px;
+  top: 43px;
 }
-nav .nav-header {
-  background-color: rgba(22, 21, 21, 0.726);
-  width: 100%;
-  margin: 0 auto;
-  display: inline-block;
-  clear: both;
-  height: 45px;
-}
+
 nav .nav-category {
   display: flex;
-  width: 226px;
   margin: 0 auto;
   clear: both;
-  height: 45px;
-  color: red;
   float: left;
+}
+.category {
+  background-color: #5fa800;
+  width: 226px;
+  height: 45px;
+  color: white;
 }
 
 .header-home-item {
   height: 45px;
   line-height: 45px;
+  background-color: #333333;
+  width: 100%;
+  color: white;
 }
 .home-item {
   text-align: center;
@@ -55,12 +62,20 @@ nav .nav-category {
 .home-list {
   margin: 0 15px 0 25px;
   display: inline-block;
+  color: white;
+}
+.link {
+  color: #fff;
+}
+.link:hover {
+  color: #5fa800;
 }
 .nav {
   display: inline-block;
   clear: both;
+  height: 45px;
 }
-.header-home-item .home-item:before {
+/* .header-home-item .home-item:before {
   content: "";
   position: absolute;
   height: 44px;
@@ -81,7 +96,7 @@ nav .nav-category {
   width: 1px;
   background-color: #aca5a5;
   right: 646px;
-}
+} */
 .hotlines-servise {
   float: right;
   width: 20%;
@@ -93,8 +108,11 @@ nav .nav-category {
 }
 .headphones {
   float: right;
+  color: black;
+  background-color: black;
 }
 .hotlines {
   float: right;
   list-style-type: none;
+  color: white;
 }
