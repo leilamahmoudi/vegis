@@ -5,6 +5,8 @@ import "./App.css";
 import Header from "components/header/Header";
 import Home from "pages/Home";
 import Login from "pages/Login";
+import Product from "components/product/Product";
+import Collection from "components/collection/Collection";
 
 import Footer from "components/footer/Footer";
 
@@ -20,6 +22,12 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route exact path="/product">
+              <Product />
+            </Route>
+            <Route exat path="/collection">
+              <Collection />
             </Route>
           </Switch>
           <Footer />
