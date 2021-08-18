@@ -1,4 +1,7 @@
 import React from "react";
+import { ReactComponent as HeaderLogo } from "assets/images/logo/logo.svg";
+import { Link } from "react-router-dom";
+
 import "./header.css";
 
 export default function Header() {
@@ -6,11 +9,7 @@ export default function Header() {
     <div className="Header">
       <div className="container">
         <div className="header">
-          <img
-            className="header-logo"
-            src="assets/images/logo/logo.svg"
-            alt="logo"
-          />
+          <HeaderLogo className="header-logo" />
           <img
             className="header-basket"
             src="assets/images/icons/basket.png"
@@ -30,8 +29,12 @@ export default function Header() {
               </div>
               <div className="header-home-item">
                 <ul className="home-item">
-                  <li className="home-list home">HOME</li>
-                  <li className="home-list shop">SHOP</li>
+                  <li className="home-list home">
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li className="home-list shop">
+                    <Link to="/login">Login</Link>
+                  </li>
                   <li className="home-list collection">COLLECTION</li>
                   <li className="home-list pages">PAGES</li>
                   <li className="home-list blogs">BLOGS</li>
