@@ -1,0 +1,39 @@
+.LoginForm {
+  width: 393px;
+  height: 450px;
+  color: rgba(255, 255, 255, 0);
+  background-color: rgb(0, 0, 5);
+  opacity: 50%;
+  border: 2px #e1e1e1 solid;
+}
+.logi-title {
+  color: white;
+  text-align: center;
+}
+.login-email {
+  height: 36px;
+  width: 338px;
+  margin: 25px;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(0, 0, 5);
+  border: 2px #e1e1e1 solid;
+}
+.login-pass {
+  height: 36px;
+  width: 338px;
+  margin: 0 25px 28px 25px;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(0, 0, 5);
+  border: 2px #e1e1e1 solid;
+}
+.login-btn {
+  height: 36px;
+  width: 338px;
+  background-color: #5fa800;
+  margin: 0 25px 117px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}

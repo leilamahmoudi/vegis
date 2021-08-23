@@ -47,8 +47,12 @@ export default function Header() {
                     COLLECTION
                   </Link>
                 </li>
-                <li className="home-list pages">PAGES</li>
-                <li className="home-list blogs">BLOGS</li>
+
+                <li className="home-list blogs">
+                  <Link className="link" to="/blogs">
+                    BLOGS
+                  </Link>
+                </li>
                 <li className="home-list buy">BUY VIGIST</li>
               </ul>
             </div>
@@ -58,7 +62,9 @@ export default function Header() {
 
               <ul className="hotlines">
                 <li>
-                  <a href="#">HOTLINES</a>
+                  <a className="link" href="#">
+                    HOTLINES
+                  </a>
                 </li>
                 <li>+01 234 567 89</li>
               </ul>

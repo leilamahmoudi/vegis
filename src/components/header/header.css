@@ -53,7 +53,7 @@ nav .nav-category {
 }
 .home-item {
   text-align: center;
-  width: 80%;
+  width: 55%;
   height: 45px;
   line-height: 45px;
   margin: 0 auto;
@@ -108,11 +108,10 @@ nav .nav-category {
 }
 .headphones {
   float: right;
-  color: black;
-  background-color: black;
+  margin: 18px auto;
 }
 .hotlines {
-  float: right;
+  width: 50%;
   list-style-type: none;
   color: white;
 }

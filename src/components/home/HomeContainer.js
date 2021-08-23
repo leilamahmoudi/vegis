@@ -1,14 +1,18 @@
 import React from "react";
 import "./homeContainer.css";
 import { ReactComponent as BG } from "assets/images/bg/bg.svg";
-import { ReactComponent as Headphones } from "assets/images/icons/headphones.svg";
+import { Link } from "react-router-dom";
 const HomeContainer = () => {
   return (
     <div className="Home">
-      <div className="">
+      <div className="container">
         <div className="home-bar">
           <p className="home-home">HOME</p>
-          <p className="home-create">Create Account</p>
+          <div className="home-create">
+            <Link className="link-create-account" to="/create-account">
+              Create Account
+            </Link>
+          </div>
         </div>
         <div className="home-main">
           <div className="home-screen">
