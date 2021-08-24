@@ -1,6 +1,10 @@
 import React from "react";
-// import "./loginContainer.css";
+import LoginForm from "./LoginForm";
 const LoginContainer = () => {
-  return <div className="LoginContainer">login page</div>;
+  return (
+    <div className="LoginContainer">
+      <LoginForm />
+    </div>
+  );
 };
 export default LoginContainer;

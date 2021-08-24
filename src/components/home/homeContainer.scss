@@ -1,3 +1,4 @@
+$green: #5fa800;
 .container {
   width: 1024px;
   height: auto;
@@ -10,7 +11,11 @@
   height: 42px;
   margin: 0 auto;
   display: inline-block;
+  .link-create-account {
+    background-color: red;
+  }
 }
+
 .home-home {
   float: left;
   height: 44px;
@@ -35,11 +40,12 @@
   color: black;
 }
 .link-create-account:hover {
-  color: #5fa800;
+  color: $green;
 }
-.home-background {
+.home-screen {
   width: 100%;
   height: 650px;
   margin: 0 auto;
   clear: both;
+  background-image: url("../../assets/images/bg/bg.png");
 }

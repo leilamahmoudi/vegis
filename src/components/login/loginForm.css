@@ -36,4 +36,12 @@
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  color: white;
+}
+.privacy-policy {
+  height: 36px;
+  width: 338px;
+  margin: 0 25px 25px 25px;
+  text-align: center;
+  color: white;
 }

@@ -1,6 +1,5 @@
 import React from "react";
-import "./homeContainer.css";
-import { ReactComponent as BG } from "assets/images/bg/bg.svg";
+import "./homeContainer.scss";
 import { Link } from "react-router-dom";
 const HomeContainer = () => {
   return (
@@ -15,9 +14,7 @@ const HomeContainer = () => {
           </div>
         </div>
         <div className="home-main">
-          <div className="home-screen">
-            <BG className="home-background" />
-          </div>
+          <div className="home-screen"></div>
         </div>
       </div>
     </div>
