@@ -39,11 +39,6 @@ function App() {
           </Switch>
         </div>
       </Router>
-      {/* <header className="App-header">
-        <Header />
-        <Home />
-        <Footer />
-      </header> */}
     </div>
   );
 }

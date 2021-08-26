@@ -1,9 +1,12 @@
 import React from "react";
 import "./blogs.css";
+import PageTemplate from "components/pageTemplate/PageTemplate";
 const Blogs = () => {
   return (
-    <div className="Blogs">
-      <div className="blogs">This is blogs</div>
+    <div className="blogs">
+      <PageTemplate className="Blogs">
+        <h2>this is blogggggg</h2>
+      </PageTemplate>
     </div>
   );
 };
