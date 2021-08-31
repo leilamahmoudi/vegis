@@ -1,9 +1,12 @@
 import React from "react";
-import "./collection.css";
+import "./collection.scss";
+import PageTemplate from "components/pageTemplate/PageTemplate";
 const Collection = () => {
   return (
     <div className="Collection">
-      <div className="collection">This is collection</div>
+      <PageTemplate>
+        <div className="collection">This is collection</div>
+      </PageTemplate>
     </div>
   );
 };

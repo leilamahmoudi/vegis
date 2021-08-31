@@ -1,31 +1,79 @@
 import React from "react";
-import "./loginForm.css";
+import { Formik } from "formik";
+import "./loginForm.scss";
 import { Link } from "react-router-dom";
 
-export default function LoginForm() {
+const LoginForm = () => {
   return (
     <div className="LoginForm">
-      <div className="create-account">
-        <div className="create-title">
-          <h3 className="logi-title">Login</h3>
+      <div className="container">
+        <div className="create-account">
+          <div className="create-title">
+            <h3 className="logi-title">Login</h3>
+          </div>
+          <div className="create-form">
+            <Formik
+              initialValues={{ email: "", password: "" }}
+              onSubmit={(values, { setSubmitting }) => {
+                setTimeout(() => {
+                  console.log(values);
+                  setSubmitting(false);
+                }, 400);
+              }}
+            >
+              {({
+                values,
+                errors,
+                touched,
+                handleChange,
+                handleBlur,
+                handleSubmit,
+                isSubmitting,
+                /* and other goodies */
+              }) => (
+                <form onSubmit={handleSubmit}>
+                  <input
+                    className="login-email"
+                    placeholder="Email"
+                    type="email"
+                    name="email"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.email}
+                  />
+                  {errors.email && touched.email && errors.email}
+                  <input
+                    className="login-pass"
+                    placeholder="Password"
+                    type="password"
+                    name="password"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.password}
+                  />
+                  {errors.password && touched.password && errors.password}
+
+                  <div className="account-holder">
+                    <button
+                      type="submit"
+                      className="login-btn"
+                      disabled={isSubmitting}
+                    >
+                      Login
+                    </button>
+                  </div>
+                </form>
+              )}
+            </Formik>
+          </div>
         </div>
-        <div className="create-form">
-          <form>
-            <input type="text" value="Email" className="login-email"></input>
-            <input type="text" value="Password" className="login-pass"></input>
-          </form>
+        <div className="privacy-policy">
+          <Link className="link" to="/privacy">
+            Privacy and policy
+          </Link>
         </div>
-      </div>
-      <div className="account-holder">
-        <button type="button" className="login-btn">
-          Login
-        </button>
-      </div>
-      <div className="privacy-policy">
-        <Link className="link" to="/privacy">
-          Privacy and policy
-        </Link>
       </div>
     </div>
   );
-}
+};
+export default LoginForm;

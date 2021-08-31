@@ -1,5 +1,5 @@
 import React from "react";
-import "./blogs.css";
+import "./blogs.scss";
 import PageTemplate from "components/pageTemplate/PageTemplate";
 const Blogs = () => {
   return (

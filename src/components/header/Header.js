@@ -4,7 +4,7 @@ import { ReactComponent as HeaderBasket } from "assets/images/icons/basket.svg";
 import { ReactComponent as Headphones } from "assets/images/icons/headphones.svg";
 import { Link } from "react-router-dom";
 
-import "./header.css";
+import "./header.scss";
 
 export default function Header() {
   return (
@@ -53,7 +53,6 @@ export default function Header() {
                     BLOGS
                   </Link>
                 </li>
-                <li className="home-list buy">BUY VIGIST</li>
               </ul>
             </div>
 
