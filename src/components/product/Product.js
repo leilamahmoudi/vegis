@@ -6,172 +6,209 @@ const Product = () => {
     <div className="Product">
       <div className="container">
         <PageTemplate>
-          <div className="card">
-            {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
-            <div className="card-body">
-              <div className="img-wrap">
-                <i className="fas fa-shopping-cart fa-1x icon"></i>
-                <i className="fas fa-heart fa-1x icon"></i>
-                <i className="fas fa-sync-alt fa-1x icon"></i>
-              </div>
-              <div className="card-content">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a wider card</p>
-                <small className="text-price">price $250.000</small>
-                <small className="text-rate">Rate ***** </small>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
-            <div className="card-body">
-              <div className="img-wrap">
-                <i className="fas fa-shopping-cart fa-1x icon"></i>
-                <i className="fas fa-heart fa-1x icon"></i>
-                <i className="fas fa-sync-alt fa-1x icon"></i>
-              </div>
-              <div className="card-content">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a wider card</p>
-                <small className="text-price">price $250.000</small>
-                <small className="text-rate">Rate ***** </small>
+          <div className="product-bar"></div>
+          <div className="card-group">
+            <div className="card">
+              {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
+              <div className="card-body">
+                <div className="img-wrap">
+                  <i className="fas fa-shopping-cart fa-1x icon"></i>
+                  <i className="fas fa-heart fa-1x icon"></i>
+                  <i className="fas fa-sync-alt fa-1x icon"></i>
+                </div>
+                <div className="card-content">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a wider card</p>
+                  <small className="text-price">price $250.000</small>
+                  <small className="text-rate">Rate ***** </small>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="card">
-            {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
-            <div className="card-body">
-              <div className="img-wrap">
-                <i className="fas fa-shopping-cart fa-1x icon"></i>
-                <i className="fas fa-heart fa-1x icon"></i>
-                <i className="fas fa-sync-alt fa-1x icon"></i>
-              </div>
-              <div className="card-content">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a wider card</p>
-                <small className="text-price">price $250.000</small>
-                <small className="text-rate">Rate ***** </small>
+            <div className="card">
+              {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
+              <div className="card-body">
+                <div className="img-wrap">
+                  <i className="fas fa-shopping-cart fa-1x icon"></i>
+                  <i className="fas fa-heart fa-1x icon"></i>
+                  <i className="fas fa-sync-alt fa-1x icon"></i>
+                </div>
+                <div className="card-content">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a wider card</p>
+                  <small className="text-price">price $250.000</small>
+                  <small className="text-rate">Rate ***** </small>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="card">
-            {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
-            <div className="card-body">
-              <div className="img-wrap">
-                <i className="fas fa-shopping-cart fa-1x icon"></i>
-                <i className="fas fa-heart fa-1x icon"></i>
-                <i className="fas fa-sync-alt fa-1x icon"></i>
-              </div>
-              <div className="card-content">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a wider card</p>
-                <small className="text-price">price $250.000</small>
-                <small className="text-rate">Rate ***** </small>
+            <div className="card">
+              {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
+              <div className="card-body">
+                <div className="img-wrap">
+                  <i className="fas fa-shopping-cart fa-1x icon"></i>
+                  <i className="fas fa-heart fa-1x icon"></i>
+                  <i className="fas fa-sync-alt fa-1x icon"></i>
+                </div>
+                <div className="card-content">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a wider card</p>
+                  <small className="text-price">price $250.000</small>
+                  <small className="text-rate">Rate ***** </small>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="card">
-            {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
-            <div className="card-body">
-              <div className="img-wrap">
-                <i className="fas fa-shopping-cart fa-1x icon"></i>
-                <i className="fas fa-heart fa-1x icon"></i>
-                <i className="fas fa-sync-alt fa-1x icon"></i>
-              </div>
-              <div className="card-content">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a wider card</p>
-                <small className="text-price">price $250.000</small>
-                <small className="text-rate">Rate ***** </small>
+            <div className="card">
+              {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
+              <div className="card-body">
+                <div className="img-wrap">
+                  <i className="fas fa-shopping-cart fa-1x icon"></i>
+                  <i className="fas fa-heart fa-1x icon"></i>
+                  <i className="fas fa-sync-alt fa-1x icon"></i>
+                </div>
+                <div className="card-content">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a wider card</p>
+                  <small className="text-price">price $250.000</small>
+                  <small className="text-rate">Rate ***** </small>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="card">
-            {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
-            <div className="card-body">
-              <div className="img-wrap">
-                <i className="fas fa-shopping-cart fa-1x icon"></i>
-                <i className="fas fa-heart fa-1x icon"></i>
-                <i className="fas fa-sync-alt fa-1x icon"></i>
-              </div>
-              <div className="card-content">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a wider card</p>
-                <small className="text-price">price $250.000</small>
-                <small className="text-rate">Rate ***** </small>
+            <div className="card">
+              {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
+              <div className="card-body">
+                <div className="img-wrap">
+                  <i className="fas fa-shopping-cart fa-1x icon"></i>
+                  <i className="fas fa-heart fa-1x icon"></i>
+                  <i className="fas fa-sync-alt fa-1x icon"></i>
+                </div>
+                <div className="card-content">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a wider card</p>
+                  <small className="text-price">price $250.000</small>
+                  <small className="text-rate">Rate ***** </small>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="card">
-            {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
-            <div className="card-body">
-              <div className="img-wrap">
-                <i className="fas fa-shopping-cart fa-1x icon"></i>
-                <i className="fas fa-heart fa-1x icon"></i>
-                <i className="fas fa-sync-alt fa-1x icon"></i>
-              </div>
-              <div className="card-content">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a wider card</p>
-                <small className="text-price">price $250.000</small>
-                <small className="text-rate">Rate ***** </small>
+            <div className="card">
+              {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
+              <div className="card-body">
+                <div className="img-wrap">
+                  <i className="fas fa-shopping-cart fa-1x icon"></i>
+                  <i className="fas fa-heart fa-1x icon"></i>
+                  <i className="fas fa-sync-alt fa-1x icon"></i>
+                </div>
+                <div className="card-content">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a wider card</p>
+                  <small className="text-price">price $250.000</small>
+                  <small className="text-rate">Rate ***** </small>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="card">
-            {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
-            <div className="card-body">
-              <div className="img-wrap">
-                <i className="fas fa-shopping-cart fa-1x icon"></i>
-                <i className="fas fa-heart fa-1x icon"></i>
-                <i className="fas fa-sync-alt fa-1x icon"></i>
-              </div>
-              <div className="card-content">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a wider card</p>
-                <small className="text-price">price $250.000</small>
-                <small className="text-rate">Rate ***** </small>
+            <div className="card">
+              {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
+              <div className="card-body">
+                <div className="img-wrap">
+                  <i className="fas fa-shopping-cart fa-1x icon"></i>
+                  <i className="fas fa-heart fa-1x icon"></i>
+                  <i className="fas fa-sync-alt fa-1x icon"></i>
+                </div>
+                <div className="card-content">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a wider card</p>
+                  <small className="text-price">price $250.000</small>
+                  <small className="text-rate">Rate ***** </small>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="card">
-            {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
-            <div className="card-body">
-              <div className="img-wrap">
-                <i className="fas fa-shopping-cart fa-1x icon"></i>
-                <i className="fas fa-heart fa-1x icon"></i>
-                <i className="fas fa-sync-alt fa-1x icon"></i>
-              </div>
-              <div className="card-content">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a wider card</p>
-                <small className="text-price">price $250.000</small>
-                <small className="text-rate">Rate ***** </small>
+            <div className="card">
+              {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
+              <div className="card-body">
+                <div className="img-wrap">
+                  <i className="fas fa-shopping-cart fa-1x icon"></i>
+                  <i className="fas fa-heart fa-1x icon"></i>
+                  <i className="fas fa-sync-alt fa-1x icon"></i>
+                </div>
+                <div className="card-content">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a wider card</p>
+                  <small className="text-price">price $250.000</small>
+                  <small className="text-rate">Rate ***** </small>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="card">
-            {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
-            <div className="card-body">
-              <div className="img-wrap">
-                <i className="fas fa-shopping-cart fa-1x icon"></i>
-                <i className="fas fa-heart fa-1x icon"></i>
-                <i className="fas fa-sync-alt fa-1x icon"></i>
+            <div className="card">
+              {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
+              <div className="card-body">
+                <div className="img-wrap">
+                  <i className="fas fa-shopping-cart fa-1x icon"></i>
+                  <i className="fas fa-heart fa-1x icon"></i>
+                  <i className="fas fa-sync-alt fa-1x icon"></i>
+                </div>
+                <div className="card-content">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a wider card</p>
+                  <small className="text-price">price $250.000</small>
+                  <small className="text-rate">Rate ***** </small>
+                </div>
               </div>
-              <div className="card-content">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a wider card</p>
-                <small className="text-price">price $250.000</small>
-                <small className="text-rate">Rate ***** </small>
+            </div>
+
+            <div className="card">
+              {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
+              <div className="card-body">
+                <div className="img-wrap">
+                  <i className="fas fa-shopping-cart fa-1x icon"></i>
+                  <i className="fas fa-heart fa-1x icon"></i>
+                  <i className="fas fa-sync-alt fa-1x icon"></i>
+                </div>
+                <div className="card-content">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a wider card</p>
+                  <small className="text-price">price $250.000</small>
+                  <small className="text-rate">Rate ***** </small>
+                </div>
+              </div>
+            </div>
+
+            <div className="card">
+              {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
+              <div className="card-body">
+                <div className="img-wrap">
+                  <i className="fas fa-shopping-cart fa-1x icon"></i>
+                  <i className="fas fa-heart fa-1x icon"></i>
+                  <i className="fas fa-sync-alt fa-1x icon"></i>
+                </div>
+                <div className="card-content">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a wider card</p>
+                  <small className="text-price">price $250.000</small>
+                  <small className="text-rate">Rate ***** </small>
+                </div>
+              </div>
+            </div>
+
+            <div className="card">
+              {/* <img className="card-img-top" src="./perfume.jpeg" alt="Card image cap" /> */}
+              <div className="card-body">
+                <div className="img-wrap">
+                  <i className="fas fa-shopping-cart fa-1x icon"></i>
+                  <i className="fas fa-heart fa-1x icon"></i>
+                  <i className="fas fa-sync-alt fa-1x icon"></i>
+                </div>
+                <div className="card-content">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a wider card</p>
+                  <small className="text-price">price $250.000</small>
+                  <small className="text-rate">Rate ***** </small>
+                </div>
               </div>
             </div>
           </div>

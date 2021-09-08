@@ -18,7 +18,7 @@ export default function Header() {
           <nav>
             <div className="nav-category">
               <select className="category">
-                <option value="browser category">Browser category</option>
+                <option value="browser category">Browser Category</option>
                 <option value="breakfast">Breakfast</option>
                 <option value="dinner">Dinner</option>
                 <option value="lunch">Lunch</option>
@@ -44,13 +44,13 @@ export default function Header() {
                 </li>
                 <li className="home-list collection">
                   <Link className="link" to="/collection">
-                    COLLECTION
+                    Collection
                   </Link>
                 </li>
 
                 <li className="home-list blogs">
                   <Link className="link" to="/blogs">
-                    BLOGS
+                    Blogs
                   </Link>
                 </li>
               </ul>
@@ -62,7 +62,7 @@ export default function Header() {
               <ul className="hotlines">
                 <li>
                   <a className="link" href="#">
-                    HOTLINES
+                    Hot Lines
                   </a>
                 </li>
                 <li>+01 234 567 89</li>

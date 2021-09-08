@@ -1,8 +1,19 @@
-@mixin flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .LoginContainer {
-  @include flexCenter();
+  flex-direction: column;
+  width: 1024px;
+  margin: 0 auto;
+
+  .login-bar {
+    height: 42px;
+    margin: 0 auto;
+  }
+  .login-form {
+    height: 650px;
+    margin: 0 auto;
+    clear: both;
+    background-image: url("../../assets/images/bg/bg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

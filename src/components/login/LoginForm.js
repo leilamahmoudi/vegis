@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Formik } from "formik";
 import "./loginForm.scss";
 import { Link } from "react-router-dom";
 
 const LoginForm = () => {
+  const [name, setName] = useState("leila");
+  useEffect(() => {
+    console.log("test");
+  }, [name]);
+  console.log(name);
   return (
     <div className="LoginForm">
       <div className="container">
@@ -13,10 +18,12 @@ const LoginForm = () => {
           </div>
           <div className="create-form">
             <Formik
+              className="formik"
               initialValues={{ email: "", password: "" }}
               onSubmit={(values, { setSubmitting }) => {
                 setTimeout(() => {
                   console.log(values);
+                  setName("erfan");
                   setSubmitting(false);
                 }, 400);
               }}

@@ -5,7 +5,10 @@ import "./loginContainer.scss";
 const LoginContainer = () => {
   return (
     <div className="LoginContainer">
-      <LoginForm />
+      <div className="login-bar"></div>
+      <div className="login-form">
+        <LoginForm />
+      </div>
     </div>
   );
 };
