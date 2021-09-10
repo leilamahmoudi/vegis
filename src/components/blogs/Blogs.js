@@ -8,7 +8,13 @@ const Blogs = () => {
         <PageTemplate className="Blogs">
           <div className="Prescription">
             <div className="column-description">
-              <div className="title">GRILLED QUORN BUNS IN LIME - RECIPE</div>
+              <div className="title">
+                GRILLED BUNS IN LIME
+                <br />{" "}
+                <a href="#" className="link">
+                  RECIPE
+                </a>
+              </div>
               <div className="description">
                 Try our lacto-ovo vegetarian recipe for grilled Quorn Buns,
                 inspired by Swedish meatballs, in a sour lime and garlic sauce.
@@ -18,8 +24,21 @@ const Blogs = () => {
             <div className="column-pic "></div>
           </div>
           <div className="row">
-            <div className="column-ingredients"></div>
-            <div className="column-recipe "></div>
+            <div className="column-img "></div>
+            <div className="column-description">
+              <div className="title">
+                GRILLED BUNS IN LIME
+                <br />{" "}
+                <a href="#" className="link">
+                  RECIPE
+                </a>
+              </div>
+              <div className="description">
+                Try our lacto-ovo vegetarian recipe for grilled Quorn Buns,
+                inspired by Swedish meatballs, in a sour lime and garlic sauce.
+                Perfect on the grill and ready in 30 minutes.
+              </div>
+            </div>
           </div>
         </PageTemplate>
       </div>
