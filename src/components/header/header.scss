@@ -11,6 +11,15 @@
   width: 100%;
   height: 148px;
   line-height: 148px;
+  position: relative;
+  .nav-bar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    @media only screen and (max-width: 768px) {
+      // padding: 0 20px;
+    }
+  }
 }
 .header-bar {
   width: 100%;
@@ -23,7 +32,7 @@
 }
 .header-basket {
   float: right;
-  margin: 35px 0;
+  margin-top: 35px;
 }
 
 nav .nav-category {
@@ -31,12 +40,18 @@ nav .nav-category {
   margin: 0 auto;
   clear: both;
   float: left;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 .category {
   background-color: #5fa800;
   width: 226px;
   height: 45px;
   color: white;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .header-home-item {
@@ -45,6 +60,9 @@ nav .nav-category {
   background-color: #333333;
   width: 100%;
   color: white;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 }
 .home-item {
   text-align: center;
@@ -101,6 +119,9 @@ nav .nav-category {
   font-size: 12px;
   text-align: right;
   margin: -55px 12px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 }
 .headphones {
   float: right;
@@ -110,4 +131,12 @@ nav .nav-category {
   width: 50%;
   list-style-type: none;
   color: white;
+}
+.mobile-menu {
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+  float: right;
+  margin-top: 42px;
+  margin-left: 20px;
 }

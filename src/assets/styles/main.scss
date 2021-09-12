@@ -1,5 +1,12 @@
 @import "./variables";
 
+.pageTemplate {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+
 .container {
   width: 1024px;
   height: auto;
