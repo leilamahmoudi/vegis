@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="Footer">
       <div className="container">
         <div className="footer-information">
-          <div class="about-us">
+          <div className="about-us footer-item">
             <FooterLogo className="footer-logo" />
             <p>
               Whether you’re looking for annual or interim reports, you can{" "}
@@ -14,8 +14,8 @@ export default function Footer() {
               download our financial publications here.
             </p>
           </div>
-          <div className="servises">
-            <ul className="servises">
+          <div className="servises footer-item">
+            <ul className="servises-items">
               <li className="servis">Servises</li>
               <li className="about-vegist">About Vegist</li>
               <li className="faq's">Faq's</li>
@@ -25,8 +25,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="privacy">
-            <ul className="privacy">
+          <div className="privacy footer-item">
+            <ul className="privacy-items">
               <li className="terms">Privacy & Terms</li>
               <li className="payment">Payment Policy</li>
               <li className="return">Return Policy</li>
@@ -36,8 +36,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="my-account">
-            <ul className="my-account">
+          <div className="my-account footer-item">
+            <ul className="my-account-items">
               <li className="myAccount">My Account</li>
               <li className="account">Account</li>
               <li className="cart">My Cart</li>
@@ -46,8 +46,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="menu">
-            <ul className="menu">
+          <div className="menu footer-item">
+            <ul className="menu-items">
               <li className="title">Menu </li>
               <li className="fruits">Fruits</li>
               <li className="fast">Fast Foods</li>
@@ -57,7 +57,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="get-deals">
+          <div className="get-deals footer-item">
             <p>Get The Latest Deals</p>
             <p>And Recevie $20 Coupon For First Shopping </p>
           </div>

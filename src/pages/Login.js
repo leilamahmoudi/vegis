@@ -5,11 +5,9 @@ import "./login.scss";
 
 const Login = () => {
   return (
-    <div className="login">
-      <PageTemplate className="login-page">
-        <LoginContainer />;
-      </PageTemplate>
-    </div>
+    <PageTemplate className="login-page">
+      <LoginContainer />
+    </PageTemplate>
   );
 };
 export default Login;

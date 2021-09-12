@@ -11,7 +11,7 @@ const Blogs = () => {
               <div className="title">
                 GRILLED BUNS IN LIME
                 <br />{" "}
-                <a href="#" className="link">
+                <a href="/" className="link">
                   RECIPE
                 </a>
               </div>
@@ -29,7 +29,7 @@ const Blogs = () => {
               <div className="title">
                 GRILLED BUNS IN LIME
                 <br />{" "}
-                <a href="#" className="link">
+                <a href="/" className="link">
                   RECIPE
                 </a>
               </div>
