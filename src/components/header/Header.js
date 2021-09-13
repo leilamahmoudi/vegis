@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as HeaderLogo } from "assets/images/logo/logo.svg";
 import { ReactComponent as HeaderBasket } from "assets/images/icons/basket.svg";
 import { ReactComponent as Headphones } from "assets/images/icons/headphones.svg";
 import { ReactComponent as HamburgerMenu } from "assets/images/icons/hamburger-menu.svg";
+import MobileMenu from "components/mobileMenu/MobileMenu";
 import { Link } from "react-router-dom";
 
 import "./header.scss";
 
 export default function Header() {
+  const [openMenu, setOpenMenu] = useState(false);
+  const handleClose = () => {
+    setOpenMenu(false);
+  };
   return (
     <div className="container">
       <div className="header">
         <div className="header-bar">
           <HeaderLogo className="header-logo" />
-          <HamburgerMenu className="mobile-menu" />
+          <HamburgerMenu
+            className="mobile-menu"
+            onClick={() => setOpenMenu(true)}
+          />
           <HeaderBasket className="header-basket" />
+          <MobileMenu open={openMenu} handleClose={handleClose} />
         </div>
         <nav className="nav-bar">
           <div className="nav-category">

@@ -1,0 +1,25 @@
+.MobileMenu {
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  right: 0;
+  background-color: green;
+  &.openMenu {
+    display: block;
+  }
+  &.closeMenu {
+    display: none;
+  }
+  .mobile-menu-list {
+    width: 100%;
+    .mobile-menu-item {
+      display: block;
+      color: white;
+      line-height: 50px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+}

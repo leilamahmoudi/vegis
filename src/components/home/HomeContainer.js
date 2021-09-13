@@ -7,6 +7,7 @@ const HomeContainer = () => {
       <div className="container">
         <div className="home-bar">
           <p className="home-home">Home</p>
+
           <div className="home-create">
             <Link className="link-create-account" to="/create-account">
               Create Account
