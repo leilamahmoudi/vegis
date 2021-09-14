@@ -8,7 +8,6 @@ import Collection from "components/collection/Collection";
 import Blogs from "components/blogs/Blogs";
 import CreateAccount from "components/creat-account/CreateAccount";
 import Privacy from "components/privacy/Privacy";
-import HamburgerMenu from "components/mobileMenu/MobileMenu";
 
 function App() {
   return (
@@ -35,9 +34,6 @@ function App() {
           </Route>
           <Route exat path="/privacy">
             <Privacy />
-          </Route>
-          <Route exat path="/hamburgerMenu">
-            <HamburgerMenu />
           </Route>
         </Switch>
       </Router>

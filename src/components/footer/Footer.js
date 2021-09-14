@@ -1,7 +1,12 @@
-import React from "react";
-import "./footer.scss";
+import React, { useState } from "react";
 import { ReactComponent as FooterLogo } from "assets/images/logo/logo.svg";
+import ExpandMenu from "components/expandMenu/ExpandMenu";
+import "./footer.scss";
 export default function Footer() {
+  const [openExpand, setOpenExpand] = useState(false);
+  const handelCloseExpand = () => {
+    setOpenExpand(false);
+  };
   return (
     <div className="Footer">
       <div className="container">
@@ -17,6 +22,10 @@ export default function Footer() {
           <div className="servises footer-item">
             <ul className="servises-items">
               <li className="servis">Servises</li>
+              <ExpandMenu
+                open={openExpand}
+                handelCloseExpand={handelCloseExpand}
+              />
               <li className="about-vegist">About Vegist</li>
               <li className="faq's">Faq's</li>
               <li className="contact-us">Contact Us</li>
