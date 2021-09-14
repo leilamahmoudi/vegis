@@ -6,9 +6,10 @@ import "./mobileMenu.scss";
 const MobileMenu = ({ open, handleClose }) => {
   return (
     <div className={`MobileMenu ${open ? "openMenu" : "closeMenu"}`}>
-      <button className="close" onClick={() => handleClose()}>
+      <i class="fas fa-times close" onClick={() => handleClose()}></i>
+      {/* <button className="close" onClick={() => handleClose()}>
         Close
-      </button>
+      </button> */}
       <ul className="mobile-menu-list">
         <li className="mobile-menu-item home">
           <Link className="link" to="/">
