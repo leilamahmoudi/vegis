@@ -5,13 +5,13 @@
 
   .footer-information {
     display: table;
+    width: 100%;
     line-height: 20px;
     margin: 0 auto;
     height: 308px;
     background-color: #222222;
     border: #979797 1px;
     color: #979797;
-    padding: 25px;
   }
   .about-us {
     display: table-cell;
@@ -21,10 +21,29 @@
     list-style-type: none;
     display: table-cell;
     margin: 0px 25px auto 10px;
-    .mobile-menu-expand {
+    @media only screen and (max-width: 768px) {
+      margin-left: 0;
+    }
+
+    .servises-items {
+      &.show {
+        display: block;
+      }
+      &.hide {
+        @media only screen and (max-width: 768px) {
+          margin-left: 0;
+          display: none;
+        }
+      }
+    }
+    .expand-minus-icon,
+    .expand-plus-icon {
       @media only screen and (min-width: 768px) {
         display: none;
       }
+    }
+    .push-right {
+      float: right;
     }
   }
   .privacy {

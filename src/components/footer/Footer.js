@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import ExpandMenuPlus from "assets/images/icons/ExpandMenuPlus";
-import ExpandMenu from "components/expandMenu/ExpandMenu";
+import ExpandMenuPlus from "components/footer/expandMenu/ExpandMenuPlus";
+import ExpandMenu from "components/footer/expandMenu/ExpandMenu";
 import { ReactComponent as FooterLogo } from "assets/images/logo/logo.svg";
 import "./footer.scss";
+import ExpandMenuMinus from "./expandMenu/ExpandMenuMinus";
 
 export default function Footer() {
   const [openExpand, setOpenExpand] = useState(false);
-  const handelCloseExpand = () => {
-    setOpenExpand(false);
+  const toggleExpand = (show) => {
+    setOpenExpand(show);
   };
   return (
     <div className="Footer">
@@ -22,54 +23,103 @@ export default function Footer() {
             </p>
           </div>
           <div className="servises footer-item">
-            <ul className="servises-items">
-              <li className="servis">Servises</li>
-              <ExpandMenuPlus
-                className="mobile-menu-expand"
-                onClick={() => setOpenExpand(true)}
-              />
-              <ExpandMenu
-                open={openExpand}
-                handelCloseExpand={handelCloseExpand}
-              />
-              <li className="about-vegist">About Vegist</li>
-              <li className="faq's">Faq's</li>
-              <li className="contact-us">Contact Us</li>
-              <li className="news">News</li>
-              <li className="sitemap">Sitemap</li>
-            </ul>
+            <p className="servises-title">
+              Servises
+              {openExpand ? (
+                <ExpandMenuMinus
+                  className="expand-minus-icon push-right"
+                  toggleExpand={toggleExpand}
+                />
+              ) : (
+                <ExpandMenuPlus
+                  className="expand-plus-icon push-right"
+                  toggleExpand={toggleExpand}
+                />
+              )}
+            </p>
+
+            <div className={`servises-items ${openExpand ? "show" : "hide"}`}>
+              <p className="about-vegist">About Vegist</p>
+              <p className="faq's">Faq's</p>
+              <p className="contact-us">Contact Us</p>
+              <p className="news">News</p>
+              <p className="sitemap">Sitemap</p>
+            </div>
           </div>
 
-          <div className="privacy footer-item">
-            <ul className="privacy-items">
-              <li className="terms">Privacy & Terms</li>
-              <li className="payment">Payment Policy</li>
-              <li className="return">Return Policy</li>
-              <li className="shipping">Shipping Policy</li>
-              <li className="news">News</li>
-              <li className="conditions">Terms & Conditions</li>
-            </ul>
+          <div className="servises footer-item">
+            <p className="servises-title">
+              Servises
+              {openExpand ? (
+                <ExpandMenuMinus
+                  className="expand-minus-icon push-right"
+                  toggleExpand={toggleExpand}
+                />
+              ) : (
+                <ExpandMenuPlus
+                  className="expand-plus-icon push-right"
+                  toggleExpand={toggleExpand}
+                />
+              )}
+            </p>
+
+            <div className={`servises-items ${openExpand ? "show" : "hide"}`}>
+              <p className="about-vegist">About Vegist</p>
+              <p className="faq's">Faq's</p>
+              <p className="contact-us">Contact Us</p>
+              <p className="news">News</p>
+              <p className="sitemap">Sitemap</p>
+            </div>
           </div>
 
-          <div className="my-account footer-item">
-            <ul className="my-account-items">
-              <li className="myAccount">My Account</li>
-              <li className="account">Account</li>
-              <li className="cart">My Cart</li>
-              <li className="history">Older History</li>
-              <li className="wishlist">Wishlist</li>
-            </ul>
+          <div className="servises footer-item">
+            <p className="servises-title">
+              Servises
+              {openExpand ? (
+                <ExpandMenuMinus
+                  className="expand-minus-icon push-right"
+                  toggleExpand={toggleExpand}
+                />
+              ) : (
+                <ExpandMenuPlus
+                  className="expand-plus-icon push-right"
+                  toggleExpand={toggleExpand}
+                />
+              )}
+            </p>
+
+            <div className={`servises-items ${openExpand ? "show" : "hide"}`}>
+              <p className="about-vegist">About Vegist</p>
+              <p className="faq's">Faq's</p>
+              <p className="contact-us">Contact Us</p>
+              <p className="news">News</p>
+              <p className="sitemap">Sitemap</p>
+            </div>
           </div>
 
-          <div className="menu footer-item">
-            <ul className="menu-items">
-              <li className="title">Menu </li>
-              <li className="fruits">Fruits</li>
-              <li className="fast">Fast Foods</li>
-              <li className="vegetable">Vegtable</li>
-              <li className="salads">Salads</li>
-              <li className="bestsller">Bestseller</li>
-            </ul>
+          <div className="servises footer-item">
+            <p className="servises-title">
+              Servises
+              {openExpand ? (
+                <ExpandMenuMinus
+                  className="expand-minus-icon push-right"
+                  toggleExpand={toggleExpand}
+                />
+              ) : (
+                <ExpandMenuPlus
+                  className="expand-plus-icon push-right"
+                  toggleExpand={toggleExpand}
+                />
+              )}
+            </p>
+
+            <div className={`servises-items ${openExpand ? "show" : "hide"}`}>
+              <p className="about-vegist">About Vegist</p>
+              <p className="faq's">Faq's</p>
+              <p className="contact-us">Contact Us</p>
+              <p className="news">News</p>
+              <p className="sitemap">Sitemap</p>
+            </div>
           </div>
 
           <div className="get-deals footer-item">
