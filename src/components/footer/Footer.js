@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { ReactComponent as FooterLogo } from "assets/images/logo/logo.svg";
+import ExpandMenuPlus from "assets/images/icons/ExpandMenuPlus";
 import ExpandMenu from "components/expandMenu/ExpandMenu";
+import { ReactComponent as FooterLogo } from "assets/images/logo/logo.svg";
 import "./footer.scss";
+
 export default function Footer() {
   const [openExpand, setOpenExpand] = useState(false);
   const handelCloseExpand = () => {
@@ -22,6 +24,10 @@ export default function Footer() {
           <div className="servises footer-item">
             <ul className="servises-items">
               <li className="servis">Servises</li>
+              <ExpandMenuPlus
+                className="mobile-menu-expand"
+                onClick={() => setOpenExpand(true)}
+              />
               <ExpandMenu
                 open={openExpand}
                 handelCloseExpand={handelCloseExpand}

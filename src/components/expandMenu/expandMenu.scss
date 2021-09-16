@@ -1,0 +1,17 @@
+@import "../../assets/styles/variables";
+.ExpandMenu {
+  //   width: 80%;
+  //   height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  right: 0;
+  background-color: $primeryGreen;
+  &.openExpand {
+    display: block;
+    .closeExspand {
+      margin: 25px 45px;
+      float: right;
+    }
+  }
+}
