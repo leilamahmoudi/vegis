@@ -1,37 +1,37 @@
 import React, { useState } from "react";
 import ExpandMenuMinus from "components/footer/expandMenu/ExpandMenuMinus";
 import ExpandMenuPlus from "components/footer/expandMenu/ExpandMenuPlus";
+import "./myAccount.scss";
 
-const Servises = () => {
+const MyAccount = () => {
   const [openExpand, setOpenExpand] = useState(false);
   const toggleExpand = (show) => {
     setOpenExpand(show);
   };
   return (
-    <div className="servises footer-item">
-      <p className="servises-title">
-        Servises
+    <div className="myAccount footer-item">
+      <p className="account-title">
+        My Account
         {openExpand ? (
           <ExpandMenuMinus
-            className="expand-minus-icon push-right"
+            className="expand-minus-icon-account push-right"
             toggleExpand={toggleExpand}
           />
         ) : (
           <ExpandMenuPlus
-            className="expand-plus-icon push-right"
+            className="expand-plus-icon-account push-right"
             toggleExpand={toggleExpand}
           />
         )}
       </p>
 
-      <div className={`servises-items ${openExpand ? "show" : "hide"}`}>
-        <p className="about-vegist">About Vegist</p>
-        <p className="faq's">Faq's</p>
-        <p className="contact-us">Contact Us</p>
-        <p className="news">News</p>
-        <p className="sitemap">Sitemap</p>
+      <div className={`account-items ${openExpand ? "show" : "hide"}`}>
+        <p className="account">Account</p>
+        <p className="myCart">My Cart</p>
+        <p className="orderHistory">Order History</p>
+        <p className="wishList">Wishlist</p>
       </div>
     </div>
   );
 };
-export default Servises;
+export default MyAccount;

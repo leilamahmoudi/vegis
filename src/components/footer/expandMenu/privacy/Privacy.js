@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ExpandMenuMinus from "components/footer/expandMenu/ExpandMenuMinus";
 import ExpandMenuPlus from "components/footer/expandMenu/ExpandMenuPlus";
+import "./privacy.scss";
 
 const Privacy = () => {
   const [openExpand, setOpenExpand] = useState(false);
@@ -13,18 +14,18 @@ const Privacy = () => {
         Privacy & policy
         {openExpand ? (
           <ExpandMenuMinus
-            className="expand-minus-icon push-right"
+            className="expand-minus-icon-privacy push-right"
             toggleExpand={toggleExpand}
           />
         ) : (
           <ExpandMenuPlus
-            className="expand-plus-icon push-right"
+            className="expand-plus-icon-privacy push-right"
             toggleExpand={toggleExpand}
           />
         )}
       </p>
 
-      <div className={`servises-items ${openExpand ? "show" : "hide"}`}>
+      <div className={`privacy-items ${openExpand ? "show" : "hide"}`}>
         <p className="payment">Payment Policy</p>
         <p className="return">Return Policy</p>
         <p className="shipping-policy">Shipping Policy</p>

@@ -1,0 +1,26 @@
+.myAccount {
+  list-style-type: none;
+  display: table-cell;
+  margin: 0px 25px auto 10px;
+  @media only screen and (max-width: 768px) {
+    margin-left: 0;
+  }
+
+  .account-items {
+    &.show {
+      display: block;
+    }
+    &.hide {
+      @media only screen and (max-width: 768px) {
+        margin-left: 0;
+        display: none;
+      }
+    }
+  }
+  .expand-minus-icon-account,
+  .expand-plus-icon-account {
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
