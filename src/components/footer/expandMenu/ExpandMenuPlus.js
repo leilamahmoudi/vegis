@@ -6,7 +6,7 @@ const ExpandMenuPlus = ({ toggleExpand, className }) => {
       className={`ExpandMenuPlus ${className}`}
       onClick={() => toggleExpand(true)}
     >
-      <i class="fas fa-plus mobile-menu-expand"></i>
+      <i className="fas fa-plus mobile-menu-expand"></i>
     </div>
   );
 };

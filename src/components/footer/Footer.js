@@ -1,9 +1,53 @@
 import React from "react";
-import Servises from "components/footer/expandMenu/servises/Servises";
-import Privacy from "components/footer/expandMenu/privacy/Privacy";
-import MyAccount from "./expandMenu/myAccount/MyAccount";
+import ExpandMenuItem from "./expandMenu/ExpandMenuItem";
 import { ReactComponent as FooterLogo } from "assets/images/logo/logo.svg";
 import "./footer.scss";
+
+const footerItems = [
+  {
+    id: 1,
+    title: "Servises",
+    links: [
+      { title: "About Vegist", url: "/About-Vegist" },
+      { title: "Faq's", url: "/Faq's" },
+      { title: "Contact Us", url: "/ContactUs" },
+      { title: "Contact Us", url: "/ContactUs" },
+      { title: "News", url: "/News" },
+      { title: "Sitemap", url: "/Sitemap" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Privacy & policy",
+    links: [
+      { title: "Payment Policy", url: "/Payment-Policy" },
+      { title: "Return Policy", url: "/Return-Policy" },
+      { title: "Shipping Policy", url: "/Shipping-Policy" },
+      { title: "Terms & Conditions", url: "/Terms-Conditions" },
+    ],
+  },
+  {
+    id: 3,
+    title: "My Account",
+    links: [
+      { title: "Account", url: "/Account" },
+      { title: "My Cart", url: "/My-Cart" },
+      { title: "Order History", url: "/Order-History" },
+      { title: "Wishlist", url: "/Wishlist" },
+    ],
+  },
+  {
+    id: 4,
+    title: "Menu Title",
+    links: [
+      { title: "Fruits", url: "/Fruits" },
+      { title: "Fast Foods ", url: "Fast-Foods" },
+      { title: "Vegetable", url: "/Vegetable" },
+      { title: "Salads", url: "/Wishlist" },
+      { title: "Bestseller", url: "/Bestseller" },
+    ],
+  },
+];
 
 export default function Footer() {
   return (
@@ -18,9 +62,11 @@ export default function Footer() {
               download our financial publications here.
             </p>
           </div>
-          <Servises />
-          <Privacy />
-          <MyAccount />
+
+          {footerItems.map((item) => {
+            return <ExpandMenuItem item={item} key={item.id} />;
+          })}
+
           <div className="get-deals footer-item">
             <p>Get The Latest Deals</p>
             <p>And Recevie $20 Coupon For First Shopping </p>

@@ -21,12 +21,6 @@
   .push-right {
     float: right;
   }
-
-  .privacy {
-    display: table-cell;
-    margin: 0 25px auto 10px;
-    list-style-type: none;
-  }
   .my-account {
     display: table-cell;
     margin: 0 25px auto 10px;
@@ -43,7 +37,6 @@
   }
   .footer-item {
     @media only screen and (max-width: 768px) {
-      width: 100%;
       display: block;
     }
   }

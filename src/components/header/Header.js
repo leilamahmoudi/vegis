@@ -48,8 +48,8 @@ export default function Header() {
                 </Link>
               </li>
               <li className="home-list product">
-                <Link className="link" to="/product">
-                  Product
+                <Link className="link" to="/products">
+                  Products
                 </Link>
               </li>
               <li className="home-list collection">

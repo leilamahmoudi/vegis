@@ -6,7 +6,7 @@ const ExpandMenuMinus = ({ toggleExpand, className }) => {
       className={`ExpandMenuMinus ${className}`}
       onClick={() => toggleExpand(false)}
     >
-      <i class="fas fa-minus"></i>
+      <i className="fas fa-minus"></i>
     </div>
   );
 };

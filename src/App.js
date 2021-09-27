@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./assets/styles/main.scss";
 import Home from "pages/Home";
 import Login from "pages/Login";
-import Product from "components/product/Product";
+import Products from "components/products/Products";
 import Collection from "components/collection/Collection";
 import Blogs from "components/blogs/Blogs";
 import CreateAccount from "components/creat-account/CreateAccount";
 import Privacy from "components/privacy/Privacy";
+import ProductDetail from "components/products/productDetail/ProductDetail";
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route exact path="/product">
-            <Product />
+          <Route exact path="/products">
+            <Products />
           </Route>
           <Route exat path="/collection">
             <Collection />
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route exat path="/privacy">
             <Privacy />
+          </Route>
+          <Route path="/product-detail/:id">
+            <ProductDetail />
           </Route>
         </Switch>
       </Router>

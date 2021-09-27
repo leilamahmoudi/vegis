@@ -1,0 +1,9 @@
+.ProductCard {
+  width: calc(100% / 5);
+  .img-wrap {
+    .card-img-top {
+      width: 100%;
+      display: block;
+    }
+  }
+}

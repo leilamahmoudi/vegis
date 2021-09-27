@@ -6,7 +6,7 @@ import "./mobileMenu.scss";
 const MobileMenu = ({ open, handleClose }) => {
   return (
     <div className={`MobileMenu ${open ? "openMenu" : "closeMenu"}`}>
-      <i class="fas fa-times close" onClick={() => handleClose()}></i>
+      <i className="fas fa-times close" onClick={() => handleClose()}></i>
       {/* <button className="close" onClick={() => handleClose()}>
         Close
       </button> */}
