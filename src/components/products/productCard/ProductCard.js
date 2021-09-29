@@ -7,11 +7,7 @@ const ProductCard = ({ item }) => {
     <div className="ProductCard">
       <div className="card">
         <figure className="img-wrap">
-          <img
-            className="card-img-top"
-            src="https://img2.exportersindia.com/product_images/bc-full/2020/1/6885975/fresh-apple-1579841793-5267599.jpeg"
-            alt="Card image cap"
-          />
+          <img className="card-img-top" src={item.imgUrl} alt="Card cap" />
         </figure>
 
         <div className="card-body">
