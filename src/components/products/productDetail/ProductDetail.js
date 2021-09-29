@@ -14,7 +14,7 @@ const ProductDetail = () => {
     const product = productList.filter((item) => item.id === Number(productId));
 
     setCurrentProduct(product[0]);
-  }, []);
+  });
   console.log(currentProduct);
 
   return (
