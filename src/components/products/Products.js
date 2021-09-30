@@ -8,7 +8,6 @@ const productsItems = [
     id: 1,
     title: "Apples",
     text: "Granny Smith, Royal Gala, Golden",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Apple_A-Z%20Fruit1.jpg",
@@ -17,7 +16,6 @@ const productsItems = [
     id: 2,
     title: "Apricots",
     text: "Apricots can be eaten fresh or dried",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Apricot_A-Z%20Fruit2.jpg",
@@ -26,7 +24,6 @@ const productsItems = [
     id: 3,
     title: "Avocados",
     text: "Sometimes called an avocado pear",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Avocado_A-Z%20Fruit3.jpg",
@@ -35,7 +32,6 @@ const productsItems = [
     id: 4,
     title: "Bananas",
     text: "A great snack in a handy yellow skin! ",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Banana_A-Z%20Fruit4.jpg",
@@ -44,7 +40,6 @@ const productsItems = [
     id: 5,
     title: "Butternut squash",
     text: "It can be roasted, pureed, mashed ",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Butternut%20A-Z%20fruit%20veg.jpg",
@@ -53,7 +48,6 @@ const productsItems = [
     id: 6,
     title: "Cherries",
     text: "This is a wider card",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Cherry_A-Z%20Fruit5.jpg",
@@ -62,7 +56,6 @@ const productsItems = [
     id: 7,
     title: "Clementines",
     text: "This citrus fruit is the smallest of the tangerines",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Clementine_A-Z%20Fruit6.jpg",
@@ -71,7 +64,6 @@ const productsItems = [
     id: 8,
     title: "Dates",
     text: "These fruits come from the date palm tree and grow abundantly in Egypt",
-
     price: "price $250.000",
     imgUrl: "https://www.wcrf-uk.org/sites/default/files/Date_A-Z%20Fruit7.jpg",
   },
@@ -79,7 +71,6 @@ const productsItems = [
     id: 9,
     title: "Figs",
     text: "Figs are soft, sweet fruits, full of small seeds, and they're a great source of fibre",
-
     price: "price $250.000",
     imgUrl: "https://www.wcrf-uk.org/sites/default/files/Fig_A-Z%20Fruit.jpg",
   },
@@ -87,7 +78,6 @@ const productsItems = [
     id: 10,
     title: "Lemons",
     text: "In 1747, Scottish doctor James Lind proved that eating citrus fruit can prevent scurvy",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Lemon_A-Z%20Fruit14.jpg",
@@ -96,7 +86,6 @@ const productsItems = [
     id: 11,
     title: "Apples",
     text: "Granny Smith, Royal Gala, Golden",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Apple_A-Z%20Fruit1.jpg",
@@ -105,7 +94,6 @@ const productsItems = [
     id: 12,
     title: "Apricots",
     text: "Apricots can be eaten fresh or dried",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Apricot_A-Z%20Fruit2.jpg",
@@ -114,7 +102,6 @@ const productsItems = [
     id: 13,
     title: "Avocados",
     text: "Sometimes called an avocado pear",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Avocado_A-Z%20Fruit3.jpg",
@@ -123,7 +110,6 @@ const productsItems = [
     id: 14,
     title: "Bananas",
     text: "A great snack in a handy yellow skin! ",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Banana_A-Z%20Fruit4.jpg",
@@ -132,7 +118,6 @@ const productsItems = [
     id: 15,
     title: "Butternut squash",
     text: "It can be roasted, pureed, mashed ",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Butternut%20A-Z%20fruit%20veg.jpg",
@@ -141,7 +126,6 @@ const productsItems = [
     id: 16,
     title: "Cherries",
     text: "This is a wider card",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Cherry_A-Z%20Fruit5.jpg",
@@ -150,7 +134,6 @@ const productsItems = [
     id: 17,
     title: "Clementines",
     text: "This citrus fruit is the smallest of the tangerines",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Clementine_A-Z%20Fruit6.jpg",
@@ -159,7 +142,6 @@ const productsItems = [
     id: 18,
     title: "Dates",
     text: "These fruits come from the date palm tree and grow abundantly in Egypt",
-
     price: "price $250.000",
     imgUrl: "https://www.wcrf-uk.org/sites/default/files/Date_A-Z%20Fruit7.jpg",
   },
@@ -167,7 +149,6 @@ const productsItems = [
     id: 19,
     title: "Figs",
     text: "Figs are soft, sweet fruits, full of small seeds, and they're a great source of fibre",
-
     price: "price $250.000",
     imgUrl: "https://www.wcrf-uk.org/sites/default/files/Fig_A-Z%20Fruit.jpg",
   },
@@ -175,7 +156,6 @@ const productsItems = [
     id: 20,
     title: "Lemons",
     text: "In 1747, Scottish doctor James Lind proved that eating citrus fruit can prevent scurvy",
-
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Lemon_A-Z%20Fruit14.jpg",

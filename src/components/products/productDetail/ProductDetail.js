@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
+import ProductCard from "components/products/productCard/ProductCard";
+import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
 import "./productDetail.scss";
 import PageTemplate from "components/pageTemplate/PageTemplate";
 
 const ProductDetail = () => {
   const [currentProduct, setCurrentProduct] = useState(null);
+  const [relatedProduct, setRelatedProduct] = useState(null);
   const loction = useLocation();
   const pathname = loction.pathname;
   const arr = pathname.split("/");
@@ -12,17 +15,88 @@ const ProductDetail = () => {
   useEffect(() => {
     const productList = JSON.parse(localStorage.getItem("productList"));
     const product = productList.filter((item) => item.id === Number(productId));
+    const relatePr = [...productList];
+    relatePr.splice(5, relatePr.length - 5);
+
+    setRelatedProduct(relatePr);
 
     setCurrentProduct(product[0]);
   }, [productId]);
-  console.log(currentProduct);
+  // console.log(relatedProduct);
+
+  // let id1 = 1;
+  // let id2 = 10;
+  // let randomId = Math.floor(Math.random() * (id2 - id1)) + id1;
+  // console.log(randomId);
 
   return (
-    <div className="Products">
+    <div className="Products-detail">
       <div className="container">
         <PageTemplate>
           <div className="products-bar">
-            <h3> {currentProduct.title}</h3>
+            <Link className="link-product-deatail home" to="/">
+              Home
+            </Link>
+            {/* <p className="product-detail-title">
+              {" "}
+              {currentProduct && currentProduct.title}
+            </p> */}
+          </div>
+          <div className="product-row">
+            <div className="product-column-img">
+              <figure className="img-wrap">
+                <img
+                  className="img-product-detail"
+                  src={currentProduct && currentProduct.imgUrl}
+                  alt="Card cap"
+                />
+              </figure>
+            </div>
+            <div className="product-column-details">
+              <div className="card-body">
+                <div className="card-content">
+                  <h5 className="card-title">
+                    {currentProduct && currentProduct.title}
+                  </h5>
+                  <p>
+                    Availability:
+                    <a href="/" className="link-product-deatail">
+                      {" "}
+                      In Stock{" "}
+                    </a>{" "}
+                  </p>
+                  <p className="card-text">
+                    {currentProduct && currentProduct.text}
+                  </p>
+                  <small className="text-price">
+                    {currentProduct && currentProduct.price}
+                  </small>
+                  <p>
+                    Hurry up! Only{" "}
+                    <a href="/" className="link-product-deatail">
+                      {" "}
+                      7{" "}
+                    </a>{" "}
+                    products are left in stock!
+                  </p>
+                  <small className="text-rate">
+                    {currentProduct && currentProduct.rate}
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="product-description"></div>
+          <div className="related-product">
+            <div className="card-group">
+              {relatedProduct ? (
+                relatedProduct.map((item) => {
+                  return <ProductCard item={item} key={item.id} />;
+                })
+              ) : (
+                <div className="loading">loading</div>
+              )}
+            </div>
           </div>
         </PageTemplate>
       </div>
