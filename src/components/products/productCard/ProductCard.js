@@ -13,7 +13,12 @@ const ProductCard = ({ item }) => {
         <div className="card-body">
           <div className="card-content">
             <h5 className="card-title">
-              <Link to={`/product-detail/${item.id}`}>{item.title}</Link>
+              <Link
+                to={`/product-detail/${item.id}`}
+                className="card-title-link"
+              >
+                {item.title}
+              </Link>
             </h5>
             <p className="card-text">{item.text}</p>
             <small className="text-price">{item.price}</small>

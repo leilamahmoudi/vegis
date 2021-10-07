@@ -47,7 +47,7 @@ const productsItems = [
   {
     id: 6,
     title: "Cherries",
-    text: "This is a wider card",
+    text: "Cherries grow from stalks in pairs and a tree can produce fruit for as long as 100 years!",
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Cherry_A-Z%20Fruit5.jpg",
@@ -55,7 +55,7 @@ const productsItems = [
   {
     id: 7,
     title: "Clementines",
-    text: "This citrus fruit is the smallest of the tangerines",
+    text: "This citrus fruit is the smallest of the tangerinesThe skin of clementines",
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Clementine_A-Z%20Fruit6.jpg",
@@ -125,7 +125,7 @@ const productsItems = [
   {
     id: 16,
     title: "Cherries",
-    text: "This is a wider card",
+    text: "Cherries grow from stalks in pairs and a tree can produce fruit for as long as 100 years!",
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Cherry_A-Z%20Fruit5.jpg",
@@ -133,7 +133,7 @@ const productsItems = [
   {
     id: 17,
     title: "Clementines",
-    text: "This citrus fruit is the smallest of the tangerines",
+    text: "This citrus fruit is the smallest of the tangerinesThe skin of clementines ",
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Clementine_A-Z%20Fruit6.jpg",
