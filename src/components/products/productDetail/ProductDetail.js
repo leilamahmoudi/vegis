@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
 import "./productDetail.scss";
 import PageTemplate from "components/pageTemplate/PageTemplate";
+import QuntityBox from "components/quntityBox/QuntityBox";
 
 const ProductDetail = () => {
   const [currentProduct, setCurrentProduct] = useState(null);
@@ -22,12 +23,9 @@ const ProductDetail = () => {
 
     setCurrentProduct(product[0]);
   }, [productId]);
-  // console.log(relatedProduct);
-
-  // let id1 = 1;
-  // let id2 = 10;
-  // let randomId = Math.floor(Math.random() * (id2 - id1)) + id1;
-  // console.log(randomId);
+  const getQuntity = (value) => {
+    console.log("quantity", value);
+  };
 
   return (
     <div className="Products-detail">
@@ -79,6 +77,7 @@ const ProductDetail = () => {
                     </a>{" "}
                     products are left in stock!
                   </p>
+                  <QuntityBox getQuntity={getQuntity} />
                   <small className="text-rate">
                     {currentProduct && currentProduct.rate}
                   </small>
