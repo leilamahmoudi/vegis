@@ -1,21 +1,29 @@
+@import "../../assets/styles/variables";
 .Footer {
   margin: 0 auto;
   clear: both;
   font-size: 12px;
 
   .footer-information {
-    display: table;
-    width: 100%;
+    // display: table;
+    // width: 100%;
+    display: flex;
+    justify-content: space-evenly;
     line-height: 20px;
     margin: 0 auto;
     height: 308px;
     background-color: #222222;
-    border: #979797 1px;
-    color: #979797;
+    border: $primeryGray 1px;
+    color: $primeryGray;
+    padding: 15px;
+    clear: both;
+    @media only screen and (max-width: 768px) {
+      display: block;
+      height: auto;
+    }
   }
   .about-us {
-    display: table-cell;
-    margin: 0 25px auto 0;
+    width: 205px;
   }
 
   .push-right {
@@ -45,7 +53,7 @@
   width: 100%;
   height: 37px;
   line-height: 37px;
-  background-color: #5fa800;
+  background-color: $primeryGreen;
   color: white;
   margin: 0 auto;
   .copy-right {

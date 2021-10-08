@@ -1,3 +1,4 @@
+@import "../../../assets/styles/variables";
 .expand-menu-item {
   list-style-type: none;
   display: table-cell;
@@ -5,8 +6,20 @@
   @media only screen and (max-width: 768px) {
     margin-left: 0;
   }
+  .menu-title {
+    color: white;
+  }
 
   .servises-items {
+    .link-servises-items-menue {
+      text-decoration: none;
+      color: $primeryGray;
+    }
+
+    .link-servises-items-menue:hover {
+      color: $primeryGreen;
+    }
+
     &.show {
       display: block;
     }

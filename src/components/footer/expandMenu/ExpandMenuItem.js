@@ -29,7 +29,7 @@ const ExpandMenuItem = ({ item }) => {
         {item.links.map((link, index) => {
           return (
             <p className="fruits" key={index}>
-              <Link className="link" to={link.url}>
+              <Link className="link-servises-items-menue" to={link.url}>
                 {link.title}
               </Link>
             </p>
