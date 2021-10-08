@@ -28,7 +28,9 @@ export default function Header() {
         <nav className="nav-bar">
           <div className="nav-category">
             <select className="category">
-              <option value="browser category">Browser Category</option>
+              <option value="browser category" className="header-option">
+                Browser Category
+              </option>
               <option value="breakfast">Breakfast</option>
               <option value="dinner">Dinner</option>
               <option value="lunch">Lunch</option>
