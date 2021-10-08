@@ -6,11 +6,15 @@
 
 .LoginForm {
   @include flexCenter;
-  width: 393px;
+  // width: 393px;
   height: 450px;
   color: rgba(255, 255, 255, 0);
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px #e1e1e1 solid;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0 15px;
+  }
 }
 .logi-title {
   color: white;
@@ -23,6 +27,10 @@
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0);
   border: 2px #e1e1e1 solid;
+  @media only screen and (max-width: 768px) {
+    width: 302px;
+    margin: 18px;
+  }
 }
 .login-pass {
   height: 36px;
@@ -32,6 +40,10 @@
   color: white;
   background-color: rgba(0, 0, 0, 0);
   border: 2px #e1e1e1 solid;
+  @media only screen and (max-width: 768px) {
+    width: 302px;
+    margin: 18px;
+  }
 }
 ::placeholder {
   color: rgb(255, 255, 255);
@@ -46,6 +58,10 @@
   cursor: pointer;
   border-radius: 4px;
   color: white;
+  @media only screen and (max-width: 768px) {
+    width: 302px;
+    margin: 18px;
+  }
 }
 .privacy-policy {
   height: 36px;
@@ -53,4 +69,7 @@
   margin: 0 25px 25px 25px;
   text-align: center;
   color: white;
+  @media only screen and (max-width: 768px) {
+    margin: 0 auto;
+  }
 }
