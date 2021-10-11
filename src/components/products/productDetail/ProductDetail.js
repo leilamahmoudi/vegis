@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import ProductCard from "components/products/productCard/ProductCard";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
 import "./productDetail.scss";
 import PageTemplate from "components/pageTemplate/PageTemplate";
 import QuntityBox from "components/quntityBox/QuntityBox";
+import { DataContext } from "store/DataProvider";
 
 const ProductDetail = () => {
   const [currentProduct, setCurrentProduct] = useState(null);
@@ -13,6 +14,9 @@ const ProductDetail = () => {
   const pathname = loction.pathname;
   const arr = pathname.split("/");
   const productId = arr[arr.length - 1];
+
+  const [quantity] = useContext(DataContext);
+  console.log(quantity);
   useEffect(() => {
     const productList = JSON.parse(localStorage.getItem("productList"));
     const product = productList.filter((item) => item.id === Number(productId));

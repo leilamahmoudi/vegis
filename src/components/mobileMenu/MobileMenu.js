@@ -21,8 +21,8 @@ const MobileMenu = ({ open, handleClose }) => {
           </Link>
         </li>
         <li className="mobile-menu-item product">
-          <Link className="link" to="/product">
-            Product
+          <Link className="link" to="/products">
+            Products
           </Link>
         </li>
         <li className="mobile-menu-item collection">

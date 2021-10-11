@@ -13,10 +13,18 @@
   }
   .ProductCard {
     width: calc(100% / 5);
-    width: 204px;
+    @media only screen and (max-width: 768px) {
+      width: 80%;
+    }
+
     .card {
       background-color: #f1eeee;
       padding: 10px 0 15px 0;
+      .card-text {
+        padding: 0 10px;
+        text-align: center;
+        width: 100%;
+      }
     }
     .card-content {
       color: grey;
@@ -28,6 +36,7 @@
       width: 125px;
       height: 125px;
       background-color: white;
+      margin: 0 auto;
       .card-img-top {
         width: 100%;
         display: block;
