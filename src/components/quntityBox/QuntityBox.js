@@ -28,15 +28,21 @@ const QuntityBox = ({ getQuntity }) => {
   console.log(value);
   return (
     <div className="QuntityBox">
-      <button onClick={() => add()}>+</button>
+      <p className="quntity-title">Quntity:</p>
+      <button className="plus-btn" onClick={() => add()}>
+        +
+      </button>
       <input
+        className="input-quntity"
         type="number"
         min="0"
         max="5"
         value={value}
         onChange={(event) => handelChange(event.target.value)}
       />
-      <button onClick={() => reduce()}>-</button>
+      <button className="minus-btn" onClick={() => reduce()}>
+        -
+      </button>
     </div>
   );
 };

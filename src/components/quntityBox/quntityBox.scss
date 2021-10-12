@@ -1,0 +1,26 @@
+@import "../../assets/styles/variables";
+
+.QuntityBox {
+  display: flex;
+  .quntity-title {
+    margin: 0 15px 0 0;
+  }
+  .plus-btn {
+    background-color: white;
+    border: rgb(211, 211, 211) 1px solid;
+    border-radius: 1px;
+    padding: 4px 4px;
+  }
+  .input-quntity {
+    background-color: white;
+    border: rgb(211, 211, 211) 1px solid;
+    border-radius: 1px;
+    padding: 4px 4px;
+  }
+  .minus-btn {
+    background-color: white;
+    border: rgb(211, 211, 211) 1px solid;
+    border-radius: 1px;
+    padding: 4px 4px;
+  }
+}
