@@ -21,10 +21,26 @@ const Blogs = () => {
                 Perfect on the grill and ready in 30 minutes.
               </div>
             </div>
-            <div className="column-pic "></div>
+            <div className="column-pic ">
+              <figure className="img-wrap-blog">
+                <img
+                  className="column-pic-img"
+                  src="https://www.acouplecooks.com/wp-content/uploads/2020/09/Grain-Bowl-064.jpg"
+                  alt="Card cap"
+                />
+              </figure>
+            </div>
           </div>
           <div className="row">
-            <div className="column-img "></div>
+            <div className="column-pic ">
+              <figure className="img-wrap-blog">
+                <img
+                  className="column-pic-img"
+                  src="https://www.acouplecooks.com/wp-content/uploads/2020/07/Vegan-Fajitas-009.jpg"
+                  alt="Card cap"
+                />
+              </figure>
+            </div>
             <div className="column-description">
               <div className="title">
                 GRILLED BUNS IN LIME
