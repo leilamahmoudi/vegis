@@ -10,13 +10,14 @@ import { DataContext } from "store/DataProvider";
 const ProductDetail = () => {
   const [currentProduct, setCurrentProduct] = useState(null);
   const [relatedProduct, setRelatedProduct] = useState(null);
+  const [qty, setQty] = useState(0);
   const loction = useLocation();
   const pathname = loction.pathname;
   const arr = pathname.split("/");
   const productId = arr[arr.length - 1];
 
-  const [quantity] = useContext(DataContext);
-  console.log(quantity);
+  const [quantity, setQuantity] = useContext(DataContext);
+
   useEffect(() => {
     const productList = JSON.parse(localStorage.getItem("productList"));
     const product = productList.filter((item) => item.id === Number(productId));
@@ -28,7 +29,29 @@ const ProductDetail = () => {
     setCurrentProduct(product[0]);
   }, [productId]);
   const getQuntity = (value) => {
-    console.log("quantity", value);
+    setQty(value);
+  };
+  console.log("qty in peroduct detail", qty);
+
+  const handelAddToCart = () => {
+    const productBasket = {
+      id: productId,
+      qty,
+    };
+    setQuantity(qty);
+
+    const cart = localStorage.getItem("cart");
+    if (cart) {
+      const localCart = JSON.parse(cart);
+      const newArr = [...localCart];
+      const index = newArr.findIndex((item) => item.id === productId);
+      //continu
+      console.log(localCart);
+    } else {
+      let arr = [];
+      arr.push(productBasket);
+      localStorage.setItem("cart", JSON.stringify(arr));
+    }
   };
 
   return (
@@ -82,6 +105,10 @@ const ProductDetail = () => {
                     products are left in stock!
                   </p>
                   <QuntityBox getQuntity={getQuntity} />
+                  <button onClick={() => handelAddToCart()}>
+                    {" "}
+                    ADD TO CART{" "}
+                  </button>
                   <small className="text-rate">
                     {currentProduct && currentProduct.rate}
                   </small>

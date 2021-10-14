@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { DataContext } from "store/DataProvider";
 import { ReactComponent as HeaderLogo } from "assets/images/logo/logo.svg";
 import { ReactComponent as HeaderBasket } from "assets/images/icons/basket.svg";
 import { ReactComponent as Headphones } from "assets/images/icons/headphones.svg";
@@ -13,6 +14,7 @@ export default function Header() {
   const handleClose = () => {
     setOpenMenu(false);
   };
+  const [quantity] = useContext(DataContext);
   return (
     <div className="container">
       <div className="header">
@@ -23,6 +25,7 @@ export default function Header() {
             onClick={() => setOpenMenu(true)}
           />
           <HeaderBasket className="header-basket" />
+          <span>{quantity}</span>
           <MobileMenu open={openMenu} handleClose={handleClose} />
         </div>
         <nav className="nav-bar">

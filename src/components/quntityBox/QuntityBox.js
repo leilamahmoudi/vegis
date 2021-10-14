@@ -5,7 +5,7 @@ import "./quntityBox.scss";
 const QuntityBox = ({ getQuntity }) => {
   const [value, setValue] = useState(0);
   useEffect(() => {
-    // getQuntity(value);
+    getQuntity(value);
   }, [value]);
   const handelChange = (inputValue) => {
     setValue(inputValue);
@@ -25,7 +25,6 @@ const QuntityBox = ({ getQuntity }) => {
     }
   };
 
-  console.log(value);
   return (
     <div className="QuntityBox">
       <p className="quntity-title">Quntity:</p>
