@@ -3,6 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .blogs {
@@ -16,6 +19,12 @@
   .column-description {
     justify-content: flex-start;
     width: 50%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      padding: 15px 15px;
+      text-align: center;
+      box-sizing: border-box;
+    }
   }
   .title {
     font-size: 24px;
@@ -30,10 +39,18 @@
   }
   .column-pic {
     width: 50%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      display: block;
+    }
   }
   .column-pic-img {
     display: block;
     width: 100%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      display: block;
+    }
   }
   // .column-pic {
   //   // max-width: 100%;

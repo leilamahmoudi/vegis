@@ -1,4 +1,8 @@
 .collection-img {
   display: block;
   margin: 0 auto;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    display: block;
+  }
 }
