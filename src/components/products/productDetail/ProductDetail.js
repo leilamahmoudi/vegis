@@ -62,10 +62,6 @@ const ProductDetail = () => {
             <Link className="link-product-deatail home" to="/">
               Home
             </Link>
-            {/* <p className="product-detail-title">
-              {" "}
-              {currentProduct && currentProduct.title}
-            </p> */}
           </div>
           <div className="product-row">
             <div className="product-column-img">
@@ -84,12 +80,12 @@ const ProductDetail = () => {
                     {currentProduct && currentProduct.title}
                   </h5>
                   <p>
-                    Availability:
-                    <a href="/" className="link-product-deatail">
-                      {" "}
-                      In Stock{" "}
-                    </a>{" "}
+                    Availability:{currentProduct && currentProduct.availability}
+                    {/* <a href="/" className="link-product-deatail">
+                      {currentProduct && currentProduct.availability}
+                    </a> */}
                   </p>
+
                   <p className="card-text">
                     {currentProduct && currentProduct.text}
                   </p>
@@ -99,13 +95,15 @@ const ProductDetail = () => {
                   <p>
                     Hurry up! Only{" "}
                     <a href="/" className="link-product-deatail">
-                      {" "}
-                      7{" "}
-                    </a>{" "}
+                      7
+                    </a>
                     products are left in stock!
                   </p>
                   <QuntityBox getQuntity={getQuntity} />
-                  <button onClick={() => handelAddToCart()}>
+                  <button
+                    className="add-cart-btn"
+                    onClick={() => handelAddToCart()}
+                  >
                     {" "}
                     ADD TO CART{" "}
                   </button>
@@ -116,6 +114,7 @@ const ProductDetail = () => {
               </div>
             </div>
           </div>
+
           <div className="product-description"></div>
           <div className="related-product">
             <div className="card-group">

@@ -11,6 +11,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Apple_A-Z%20Fruit1.jpg",
+    availability: " In Stock",
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Apricot_A-Z%20Fruit2.jpg",
+    availability: " Sold out",
   },
   {
     id: 3,
@@ -27,6 +29,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Avocado_A-Z%20Fruit3.jpg",
+    availability: " In Stock",
   },
   {
     id: 4,
@@ -35,6 +38,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Banana_A-Z%20Fruit4.jpg",
+    availability: " Sold out",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Butternut%20A-Z%20fruit%20veg.jpg",
+    availability: " Sold out",
   },
   {
     id: 6,
@@ -51,6 +56,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Cherry_A-Z%20Fruit5.jpg",
+    availability: " Sold out",
   },
   {
     id: 7,
@@ -59,6 +65,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Clementine_A-Z%20Fruit6.jpg",
+    availability: " In Stock",
   },
   {
     id: 8,
@@ -66,6 +73,7 @@ const productsItems = [
     text: "These fruits come from the date palm tree and grow abundantly in Egypt",
     price: "price $250.000",
     imgUrl: "https://www.wcrf-uk.org/sites/default/files/Date_A-Z%20Fruit7.jpg",
+    availability: " Sold out",
   },
   {
     id: 9,
@@ -73,6 +81,7 @@ const productsItems = [
     text: "Figs are soft, sweet fruits, full of small seeds, and they're a great source of fibre",
     price: "price $250.000",
     imgUrl: "https://www.wcrf-uk.org/sites/default/files/Fig_A-Z%20Fruit.jpg",
+    availability: " In Stock",
   },
   {
     id: 10,
@@ -81,6 +90,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Lemon_A-Z%20Fruit14.jpg",
+    availability: " Sold out",
   },
   {
     id: 11,
@@ -89,6 +99,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Apple_A-Z%20Fruit1.jpg",
+    availability: " In Stock",
   },
   {
     id: 12,
@@ -97,6 +108,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Apricot_A-Z%20Fruit2.jpg",
+    availability: " In Stock",
   },
   {
     id: 13,
@@ -105,6 +117,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Avocado_A-Z%20Fruit3.jpg",
+    availability: " Sold out",
   },
   {
     id: 14,
@@ -113,6 +126,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Banana_A-Z%20Fruit4.jpg",
+    availability: " In Stock",
   },
   {
     id: 15,
@@ -121,6 +135,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Butternut%20A-Z%20fruit%20veg.jpg",
+    availability: " Sold out",
   },
   {
     id: 16,
@@ -129,6 +144,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Cherry_A-Z%20Fruit5.jpg",
+    availability: " Sold out",
   },
   {
     id: 17,
@@ -137,6 +153,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Clementine_A-Z%20Fruit6.jpg",
+    availability: " In Stock",
   },
   {
     id: 18,
@@ -144,6 +161,7 @@ const productsItems = [
     text: "These fruits come from the date palm tree and grow abundantly in Egypt",
     price: "price $250.000",
     imgUrl: "https://www.wcrf-uk.org/sites/default/files/Date_A-Z%20Fruit7.jpg",
+    availability: " Sold out",
   },
   {
     id: 19,
@@ -151,6 +169,7 @@ const productsItems = [
     text: "Figs are soft, sweet fruits, full of small seeds, and they're a great source of fibre",
     price: "price $250.000",
     imgUrl: "https://www.wcrf-uk.org/sites/default/files/Fig_A-Z%20Fruit.jpg",
+    availability: " In Stock",
   },
   {
     id: 20,
@@ -159,6 +178,7 @@ const productsItems = [
     price: "price $250.000",
     imgUrl:
       "https://www.wcrf-uk.org/sites/default/files/Lemon_A-Z%20Fruit14.jpg",
+    availability: " Sold out",
   },
 ];
 

@@ -25,7 +25,7 @@ export default function Header() {
             onClick={() => setOpenMenu(true)}
           />
           <HeaderBasket className="header-basket" />
-          <span>{quantity}</span>
+          <span className="qtn-basket">{quantity}</span>
           <MobileMenu open={openMenu} handleClose={handleClose} />
         </div>
         <nav className="nav-bar">
