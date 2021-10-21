@@ -43,6 +43,7 @@ const Collection = () => {
                     className="titile-coll"
                     href="https://www.tasteofhome.com/collection/vegetarian-meal-plan/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     {" "}
                     Go for easy ideas
@@ -55,6 +56,7 @@ const Collection = () => {
                     className="titile-coll"
                     href="https://www.tasteofhome.com/collection/vegetarian-meal-plan/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Go for easy ideas
                   </a>
@@ -66,6 +68,7 @@ const Collection = () => {
                     className="titile-coll"
                     href="https://www.tasteofhome.com/collection/vegetarian-meal-plan/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Go for easy ideas
                   </a>
