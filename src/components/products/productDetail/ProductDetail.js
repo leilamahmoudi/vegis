@@ -45,6 +45,9 @@ const ProductDetail = () => {
       const localCart = JSON.parse(cart);
       const newArr = [...localCart];
       const index = newArr.findIndex((item) => item.id === productId);
+      if (index > -1) {
+      } else {
+      }
       //continu
       console.log(localCart);
     } else {
