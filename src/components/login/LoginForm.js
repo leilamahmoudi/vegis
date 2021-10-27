@@ -4,6 +4,11 @@ import "./loginForm.scss";
 import { Link } from "react-router-dom";
 
 const LoginForm = () => {
+  const loginText = () => {
+    let name = prompt("What is your name?");
+    alert(`Thank you ${name} we will be in touch!`);
+  };
+
   const [name, setName] = useState("leila");
   useEffect(() => {
     // console.log("test");
@@ -65,6 +70,7 @@ const LoginForm = () => {
                       type="submit"
                       className="login-btn"
                       disabled={isSubmitting}
+                      onClick={loginText}
                     >
                       Login
                     </button>
