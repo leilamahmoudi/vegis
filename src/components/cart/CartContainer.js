@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import QuntityBox from "components/quntityBox/QuntityBox";
 import "./cartContainer.scss";
 
 const CartContainer = () => {
-  const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cart")));
-  console.log(setCart);
+  // const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cart")));
+  const cart = JSON.parse(localStorage.getItem("cart"));
+
   const getQuntity = (value) => {
     console.log(value);
   };
