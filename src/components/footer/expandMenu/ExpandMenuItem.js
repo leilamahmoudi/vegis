@@ -10,7 +10,7 @@ const ExpandMenuItem = ({ item }) => {
   };
   return (
     <div className="menu footer-item expand-menu-item">
-      <p className="menu-title">
+      <div className="menu-title">
         {item.title}
         {openExpand ? (
           <ExpandMenuMinus
@@ -23,7 +23,7 @@ const ExpandMenuItem = ({ item }) => {
             toggleExpand={toggleExpand}
           />
         )}
-      </p>
+      </div>
 
       <div className={`servises-items ${openExpand ? "show" : "hide"}`}>
         {item.links.map((link, index) => {

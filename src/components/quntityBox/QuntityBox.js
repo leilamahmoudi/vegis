@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import "./quntityBox.scss";
 
-const QuntityBox = ({ getQuntity }) => {
-  const [value, setValue] = useState(0);
+const QuntityBox = ({ getQuntity, defaultValue }) => {
+  const [value, setValue] = useState(defaultValue || 0);
   useEffect(() => {
     getQuntity(value);
   }, [value]);
@@ -47,6 +47,7 @@ const QuntityBox = ({ getQuntity }) => {
 };
 QuntityBox.propTypes = {
   getQuntity: PropTypes.func,
+  defaultValue: PropTypes.number,
 };
 
 export default QuntityBox;

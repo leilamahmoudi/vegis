@@ -15,6 +15,7 @@ export default function Header() {
     setOpenMenu(false);
   };
   const [quantity] = useContext(DataContext);
+
   return (
     <div className="container">
       <div className="header">
@@ -24,8 +25,10 @@ export default function Header() {
             className="mobile-menu"
             onClick={() => setOpenMenu(true)}
           />
-          <HeaderBasket className="header-basket" />
-          <span className="qtn-basket">{quantity}</span>
+          <Link className="link" to="/cart">
+            <HeaderBasket className="header-basket" />
+            <span className="qtn-basket">{quantity}</span>
+          </Link>
           <MobileMenu open={openMenu} handleClose={handleClose} />
         </div>
         <nav className="nav-bar">
