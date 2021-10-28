@@ -68,7 +68,7 @@ const CartContainer = () => {
                         </div>
                         <div className="cart-shop-price">75.00kr</div>
                         <button
-                          className="cart-shop-remove"
+                          className="cart-remove"
                           onClick={() => handelRemove(item.id)}
                         >
                           Remove
