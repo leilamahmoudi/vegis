@@ -25,7 +25,7 @@ export default function Header() {
             className="mobile-menu"
             onClick={() => setOpenMenu(true)}
           />
-          <Link className="link" to="/cart">
+          <Link className="link" to="/shopping-bag">
             <HeaderBasket className="header-basket" />
             <span className="qtn-basket">{quantity}</span>
           </Link>
