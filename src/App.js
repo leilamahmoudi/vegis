@@ -4,6 +4,7 @@ import { DataProvider } from "store/DataProvider";
 import "./assets/styles/main.scss";
 import Home from "pages/Home";
 import Login from "pages/Login";
+import Cart from "pages/Cart";
 import Products from "components/products/Products";
 import Collection from "components/collection/Collection";
 import Blogs from "components/blogs/Blogs";
@@ -40,6 +41,9 @@ function App() {
             </Route>
             <Route path="/product-detail/:id">
               <ProductDetail />
+            </Route>
+            <Route path="/cart">
+              <Cart />
             </Route>
           </Switch>
         </Router>
