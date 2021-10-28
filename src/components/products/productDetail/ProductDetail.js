@@ -40,7 +40,7 @@ const ProductDetail = () => {
     const cart = localStorage.getItem("cart");
     if (cart) {
       const newArr = JSON.parse(cart);
-      const localCart = [...newArr.items];
+      const localCart = Array.isArray(newArr.items) ? [...newArr.items] : [];
 
       const index = localCart.findIndex(
         (item) => Number(item.id) === Number(productId)
