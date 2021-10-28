@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./quntityBox.scss";
 
 const QuntityBox = ({ getQuntity, defaultValue }) => {
   const [value, setValue] = useState(defaultValue || 0);
-  useEffect(() => {
-    getQuntity(value);
-  }, [value]);
+
   const handelChange = (inputValue) => {
     setValue(inputValue);
   };
@@ -15,6 +13,7 @@ const QuntityBox = ({ getQuntity, defaultValue }) => {
       let newValue;
       newValue = value + 1;
       setValue(newValue);
+      getQuntity(newValue);
     }
   };
   const reduce = () => {
@@ -22,6 +21,7 @@ const QuntityBox = ({ getQuntity, defaultValue }) => {
       let newValue;
       newValue = value - 1;
       setValue(newValue);
+      getQuntity(newValue);
     }
   };
 

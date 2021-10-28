@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import QuntityBox from "components/quntityBox/QuntityBox";
-
 import "./cartContainer.scss";
-import { number } from "prop-types";
+
 const CartContainer = () => {
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cart")));
-  console.log("cart", cart);
+  console.log(setCart);
   const getQuntity = (value) => {
     console.log(value);
   };

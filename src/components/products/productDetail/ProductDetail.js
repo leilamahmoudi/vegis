@@ -17,6 +17,7 @@ const ProductDetail = () => {
   const productId = arr[arr.length - 1];
 
   const [quantity, setQuantity] = useContext(DataContext);
+  console.log(quantity);
 
   useEffect(() => {
     const productList = JSON.parse(localStorage.getItem("productList"));
