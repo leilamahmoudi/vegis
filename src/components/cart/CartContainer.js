@@ -37,49 +37,55 @@ const CartContainer = () => {
           <div className="cart-list-item-bag-left">
             <div className="cart-my-cart">
               <p className="cart-title">My Cart:</p>
-              <p className="cart-number">Items: {cart.total}</p>
+              <p className="cart-number">
+                Items: {cart && cart.items.length > 0 ? cart.total : 0}
+              </p>
             </div>
-            <div className="cart-shop-bag-body">
-              <div className="check-summary-total">
-                {cart.items.map((item) => {
-                  return (
-                    <div key={item.id}>
-                      <div className="cart-shop-bag-item">
-                        <figure className="cart-img-wrap">
-                          <img
-                            className="cart-img"
-                            src={item.imgUrl}
-                            alt="Cart-img-purchase"
-                          />
-                        </figure>
-                        <div className="cart-shop-info">
-                          <div className="cart-shop-info-title">
-                            {item.title}
+            {cart && cart.items.length > 0 ? (
+              <div className="cart-shop-bag-body">
+                <div className="check-summary-total">
+                  {cart.items.map((item) => {
+                    return (
+                      <div key={item.id}>
+                        <div className="cart-shop-bag-item">
+                          <figure className="cart-img-wrap">
+                            <img
+                              className="cart-img"
+                              src={item.imgUrl}
+                              alt="Cart-img-purchase"
+                            />
+                          </figure>
+                          <div className="cart-shop-info">
+                            <div className="cart-shop-info-title">
+                              {item.title}
+                            </div>
+                            <div className="cart-shop-info-size">Size: 1kg</div>
+                            <div className="cart-shop-info-per-price">
+                              {item.price}
+                            </div>
                           </div>
-                          <div className="cart-shop-info-size">Size: 1kg</div>
-                          <div className="cart-shop-info-per-price">
-                            {item.price}
+                          <div className="cart-shop-quntity">
+                            <QuntityBox
+                              getQuntity={getQuntity}
+                              defaultValue={item.qty}
+                            />
                           </div>
+                          <div className="cart-shop-price">75.00kr</div>
+                          <button
+                            className="cart-remove"
+                            onClick={() => handelRemove(item.id)}
+                          >
+                            Remove
+                          </button>
                         </div>
-                        <div className="cart-shop-quntity">
-                          <QuntityBox
-                            getQuntity={getQuntity}
-                            defaultValue={item.qty}
-                          />
-                        </div>
-                        <div className="cart-shop-price">75.00kr</div>
-                        <button
-                          className="cart-remove"
-                          onClick={() => handelRemove(item.id)}
-                        >
-                          Remove
-                        </button>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
-            </div>
+            ) : (
+              <div>There is no item! </div>
+            )}
           </div>
           <div className="cart-check-summary-right">
             <div className="check-summary-title">Order summary</div>
