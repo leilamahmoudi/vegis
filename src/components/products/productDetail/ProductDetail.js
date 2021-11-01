@@ -46,8 +46,6 @@ const ProductDetail = () => {
         (item) => Number(item.id) === Number(productId)
       );
 
-      console.log("index", index, "localCart", localCart);
-
       if (index > -1) {
         let cartObj = {};
         localCart[index].qty = qty;

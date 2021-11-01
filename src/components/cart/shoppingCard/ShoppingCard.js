@@ -1,11 +1,66 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DataContext } from "store/DataProvider";
 import PropTypes from "prop-types";
 import "./shoppingCard.scss";
 import QuntityBox from "components/quntityBox/QuntityBox";
+
 // import { Link } from "react-router-dom";
 const ShoppingCard = ({ item, cart }) => {
+  const productId = item.id;
+  const currentProduct = item;
+  const [quantity, setQuantity] = useContext(DataContext);
+  console.log(quantity);
   const getQuntity = (qty) => {
     console.log(qty);
+
+    const cart = localStorage.getItem("cart");
+    if (cart) {
+      const newArr = JSON.parse(cart);
+      const localCart = Array.isArray(newArr.items) ? [...newArr.items] : [];
+
+      const index = localCart.findIndex(
+        (item) => Number(item.id) === Number(productId)
+      );
+
+      if (index > -1) {
+        let cartObj = {};
+        localCart[index].qty = qty;
+
+        const newQty = localCart.reduce((acc, element) => {
+          return (acc = acc + element.qty);
+        }, 0);
+
+        cartObj.total = newQty;
+        cartObj.items = localCart;
+
+        localStorage.setItem("cart", JSON.stringify(cartObj));
+
+        setQuantity(newQty);
+      } else {
+        let cartObj = {};
+        currentProduct.qty = qty;
+        localCart.push(currentProduct);
+        const newQty = localCart.reduce((acc, element) => {
+          return (acc = acc + element.qty);
+        }, 0);
+
+        cartObj.total = newQty;
+        cartObj.items = localCart;
+
+        localStorage.setItem("cart", JSON.stringify(cartObj));
+
+        setQuantity(newQty);
+      }
+    } else {
+      let arr = [];
+      let cartObj = {};
+      currentProduct.qty = qty;
+      arr.push(currentProduct);
+      setQuantity(qty);
+      cartObj.total = qty;
+      cartObj.items = arr;
+      localStorage.setItem("cart", JSON.stringify(arr));
+    }
   };
   const handelRemove = (id) => {
     const localCart = [...cart.items];

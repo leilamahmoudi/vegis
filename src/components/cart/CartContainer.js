@@ -1,16 +1,11 @@
-import React from "react";
-import QuntityBox from "components/quntityBox/QuntityBox";
+import React, { useContext } from "react";
+import { DataContext } from "store/DataProvider";
 import ShoppingCard from "./shoppingCard/ShoppingCard";
 import "./cartContainer.scss";
 
 const CartContainer = () => {
-  // const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cart")));
   const cart = JSON.parse(localStorage.getItem("cart"));
-
-  const getQuntity = (value) => {
-    console.log(value);
-  };
-
+  const [quantity] = useContext(DataContext);
   return (
     <div className="Cart">
       <div className="container">
@@ -23,9 +18,7 @@ const CartContainer = () => {
           <div className="cart-list-item-bag-left">
             <div className="cart-my-cart">
               <p className="cart-title">My Cart:</p>
-              <p className="cart-number">
-                Items: {cart && cart.items.length > 0 ? cart.total : 0}
-              </p>
+              <p className="cart-number">Items: {quantity}</p>
             </div>
             {cart && cart.items.length > 0 ? (
               <div className="cart-shop-bag-body">
