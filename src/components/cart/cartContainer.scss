@@ -48,11 +48,10 @@
   .cart-my-cart {
     width: 100%;
     height: 84 px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
     display: flex;
     font-size: 14px;
     border-top: solid#e7e5e5 1px;
-    border-bottom: solid#e7e5e5 1px;
 
     .cart-title {
       display: flex;
@@ -74,6 +73,29 @@
 .cart-check-summary-right {
   float: right;
   width: 30%;
+  height: 400px;
+  background-color: #e7e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  .check-summary-title {
+    margin: 20px auto;
+    font-size: 20px;
+  }
+  .check-btn {
+    margin: 0 auto;
+    .check-btn-check-out {
+      padding: 15px;
+      border: none;
+      background: none;
+      font-size: 15px;
+      color: #4f8a02;
+    }
+    .check-btn-check-out:hover {
+      color: #5fa800;
+    }
+  }
 }
 .cart-shop-bag-body {
   display: flex;
@@ -83,6 +105,7 @@
     display: flex;
     margin: 0 auto;
     clear: both;
+    border-top: solid#e7e5e5 1px;
 
     .cart-shop-info {
       font-size: 15px;
