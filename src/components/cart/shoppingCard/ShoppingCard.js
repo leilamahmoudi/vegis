@@ -8,7 +8,7 @@ import QuntityBox from "components/quntityBox/QuntityBox";
 const ShoppingCard = ({ item, cart }) => {
   const productId = item.id;
   const currentProduct = item;
-  c;
+  const [quantity, setQuantity] = useContext(DataContext);
   console.log(quantity);
   const getQuntity = (qty) => {
     console.log(qty);
