@@ -31,7 +31,7 @@ const CartContainer = () => {
                 </div>
               </div>
             ) : (
-              <div>There is no item! </div>
+              <div className="cart-check-no-item">There is no item! </div>
             )}
           </div>
           <div className="cart-check-summary-right">

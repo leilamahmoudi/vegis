@@ -36,7 +36,7 @@
     position: absolute;
     height: 30px;
     width: 1px;
-    background-color: #aca5a5;
+    background-color: #e7e5e5;
     margin: 8px 15px;
   }
 }
@@ -48,10 +48,11 @@
   .cart-my-cart {
     width: 100%;
     height: 84 px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     display: flex;
     font-size: 14px;
-    background-color: #f1eeee;
+    border-top: solid#e7e5e5 1px;
+    border-bottom: solid#e7e5e5 1px;
 
     .cart-title {
       display: flex;
@@ -64,6 +65,11 @@
       align-content: flex-end;
     }
   }
+  .cart-check-no-item {
+    margin: 45px auto;
+    font-size: 25px;
+    color: #5fa800;
+  }
 }
 .cart-check-summary-right {
   float: right;
@@ -75,6 +81,33 @@
 
   .cart-shop-bag-item {
     display: flex;
+    margin: 0 auto;
+    clear: both;
+
+    .cart-shop-info {
+      font-size: 15px;
+      margin: 35px 45px;
+    }
+    .cart-shop-quntity {
+      font-size: 15px;
+      margin: 35px 27px;
+      display: flex;
+      flex-direction: column;
+    }
+    .cart-shop-price {
+      font-size: 15px;
+      margin: 35px 10px;
+    }
+    .cart-remove {
+      padding: 0;
+      border: none;
+      background: none;
+      margin: 10px auto;
+      font-size: 12px;
+    }
+    .cart-remove:hover {
+      color: #5fa800;
+    }
   }
   .cart-img-wrap {
     width: 150px;
@@ -83,6 +116,12 @@
       display: block;
       width: 100%;
     }
+  }
+  .cart-shop-price-section {
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    margin: 0 10px;
   }
 
   //   .cart-img-wrap {

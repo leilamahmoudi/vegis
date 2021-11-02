@@ -75,7 +75,7 @@ const ShoppingCard = ({ item, cart }) => {
     }, 0);
     cart.total = total;
     localStorage.setItem("cart", JSON.stringify(cart));
-    // window.location.reload(false);
+    window.location.reload(false);
   };
   return (
     <div className="ShoppingCard">
@@ -90,11 +90,13 @@ const ShoppingCard = ({ item, cart }) => {
         </div>
         <div className="cart-shop-quntity">
           <QuntityBox getQuntity={getQuntity} defaultValue={item.qty} />
+          <button className="cart-remove" onClick={() => handelRemove(item.id)}>
+            Remove
+          </button>
         </div>
-        <div className="cart-shop-price">75.00kr</div>
-        <button className="cart-remove" onClick={() => handelRemove(item.id)}>
-          Remove
-        </button>
+        <div className="cart-shop-price-section">
+          <div className="cart-shop-price">75.00kr</div>
+        </div>
       </div>
     </div>
   );
