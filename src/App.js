@@ -11,6 +11,7 @@ import Blogs from "components/blogs/Blogs";
 import CreateAccount from "components/creat-account/CreateAccount";
 import Privacy from "components/privacy/Privacy";
 import ProductDetail from "components/products/productDetail/ProductDetail";
+import "antd/dist/antd.css";
 
 function App() {
   return (

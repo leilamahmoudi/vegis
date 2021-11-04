@@ -5,6 +5,7 @@ import { ReactComponent as HeaderBasket } from "assets/images/icons/basket.svg";
 import { ReactComponent as Headphones } from "assets/images/icons/headphones.svg";
 import { ReactComponent as HamburgerMenu } from "assets/images/icons/hamburger-menu.svg";
 import MobileMenu from "components/mobileMenu/MobileMenu";
+import VegidtDropDown from "components/vegistDropDown/VegistDropDown";
 import { Link } from "react-router-dom";
 
 import "./header.scss";
@@ -15,6 +16,11 @@ export default function Header() {
     setOpenMenu(false);
   };
   const [quantity] = useContext(DataContext);
+  const categoryItems = [
+    { id: 1, name: "Fresh Fruits" },
+    { id: 2, name: "Fresh Meat" },
+    { id: 3, name: "Fresh Vegetable" },
+  ];
 
   return (
     <div className="container">
@@ -33,31 +39,13 @@ export default function Header() {
         </div>
         <nav className="nav-bar">
           <div className="nav-category">
-            {/* <div class="dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dropdown button
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">
-                  Action
-                </a>
-                <a class="dropdown-item" href="#">
-                  Another action
-                </a>
-                <a class="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </div>
-            </div> */}
+            <VegidtDropDown
+              className="isGreen "
+              title="Browse Category"
+              items={categoryItems}
+            />
 
-            <select className="category">
+            {/* <select className="category">
               <option value="browser category" className="header-option">
                 Browser Category
               </option>
@@ -65,7 +53,7 @@ export default function Header() {
               <option value="dinner">Dinner</option>
               <option value="lunch">Lunch</option>
               <option value="cheese">Cheese</option>
-            </select>
+            </select> */}
           </div>
           <div className="header-home-item">
             <ul className="home-item">

@@ -1,0 +1,19 @@
+.vegis-drop-down {
+  height: 45px;
+  line-height: 45px;
+
+  &.isGreen {
+    background-color: #5fa800;
+    color: white;
+    width: 226px;
+    padding: 0 30px;
+    .anticon-down {
+      left: 35px;
+      position: relative;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 0 0 15px;
+  }
+}
