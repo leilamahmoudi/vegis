@@ -1,65 +1,59 @@
 .collection-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   clear: both;
   width: 100%;
-}
-.row-collection-pic {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  .column-pic-img {
-    display: block;
-    margin: 0 auto;
-    width: 500px;
-    border-radius: 4px;
-    @media only screen and (max-width: 768px) {
-      width: 100%;
-      display: block;
-    }
-  }
-  .collection-img {
-    margin: 10px auto;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 768px) {
+    padding: 0 25px;
   }
 }
-.row-collection-offer {
+
+.column-pic-img {
+  display: block;
+  width: 500px;
+  border-radius: 4px;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+.collection-img {
+  margin: 10px auto;
+}
+.go-recipes-card {
   display: flex;
-  flex-direction: column;
-  width: 50%;
-  .go-recipes-card {
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-    align-content: flex-start;
-    width: 500px;
-    height: 500px;
-    border: 1px #5fa800b4 solid;
-    border-radius: 4px;
-    margin: 10px auto;
-    background-color: #d1cccc59;
-  }
-  .card-collection-body {
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-    align-content: flex-start;
-    width: 300px;
-    height: 300px;
-    border: 1px #5fa800b4 solid;
-    border-radius: 4px;
-    margin: 100px auto;
-    background-color: #5fa800b4;
-  }
-  .titile-coll {
-    text-decoration: none;
-    margin: 140px auto;
-    font-family: "Festive", cursive;
-    font-size: 40px;
-    color: white;
-  }
-  .titile-coll:hover {
-    color: black;
-  }
+  justify-content: center;
+  flex-flow: wrap;
+  align-content: flex-start;
+  width: 500px;
+  height: 500px;
+  border: 1px #5fa800b4 solid;
+  border-radius: 4px;
+  margin: 10px auto;
+  background-color: #d1cccc59;
+}
+.card-collection-body {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  align-content: flex-start;
+  width: 300px;
+  height: 300px;
+  border: 1px #5fa800b4 solid;
+  border-radius: 4px;
+  margin: 100px auto;
+  background-color: #5fa800b4;
+}
+.titile-coll {
+  text-decoration: none;
+  margin: 140px auto;
+  font-family: "Festive", cursive;
+  font-size: 40px;
+  color: white;
+}
+.titile-coll:hover {
+  color: black;
 }
