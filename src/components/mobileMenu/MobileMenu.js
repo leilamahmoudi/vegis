@@ -25,6 +25,12 @@ const MobileMenu = ({ open, handleClose }) => {
             Products
           </Link>
         </li>
+        <li className="mobile-menu-item home">
+          <Link className="link" to="/shopping-bag">
+            Cart
+          </Link>
+        </li>
+
         <li className="mobile-menu-item collection">
           <Link className="link" to="/collection">
             Collection
